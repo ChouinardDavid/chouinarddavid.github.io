@@ -1,11 +1,14 @@
 
 
-
+.content{
+    height: 85vh;
+    width: 100vw;
+    background-color: aquamarine;
+}
 
 .titleDiv {
     padding: 20px 30px;
     display: flex;
-    // text-align: center;
 
     .myImage {
         border-radius: 50%;

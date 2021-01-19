@@ -1,6 +1,6 @@
 import React from 'react';
 import TitleLabel from '../../titleLabel/titleLabel';
-import SectionForm from '../sectionForm/sectionsForm';
+import SectionForm from '../../sectionForm/sectionsForm';
 import styles from './career.module.scss';
 import TimeLine from './../../timeLine/timeline';
 

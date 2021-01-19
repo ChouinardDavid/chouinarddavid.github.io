@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './presentation.module.scss';
-import SectionForm from '../sectionForm/sectionsForm';
+import SectionForm from '../../sectionForm/sectionsForm';
 import TitleLabel from '../../titleLabel/titleLabel';
 import Paper from '@material-ui/core/Paper';
 

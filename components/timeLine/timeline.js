@@ -11,24 +11,12 @@ import { InView } from 'react-intersection-observer';
 import Zoom from '@material-ui/core/Zoom';
 import WorkIcon from '@material-ui/icons/Work';
 import StarIcon from '@material-ui/icons/Star';
-
-
-
-const useStyles = makeStyles(
-    {
-        icon: {
-            height: '50px',
-            width: '50px',
-        },
-    }
-);
-
+import Job from '../sections/carrer/job';
 
 
 
 const TimeLine = (props) => {
-    const emplois = props.emplois;
-    const classes = useStyles();
+    const { emplois } = props
 
     const removeBeforeCssClass = input => {
         if (input)
@@ -45,26 +33,13 @@ const TimeLine = (props) => {
                                 <TimelineDot color="primary">
                                     <WorkIcon fontSize="large" />
                                 </TimelineDot>
-                                <TimelineConnector />
+                                <TimelineConnector className={styles.customBlackLine} />
                             </TimelineSeparator>
                             <InView threshold={0.75} triggerOnce>
                                 {({ inView, ref, entry }) => (
                                     <Zoom in={inView} timeout={900}>
                                         <TimelineContent ref={ref} className={styles.item}>
-                                            <Paper elevation={3} className={classes.paper}>
-                                                <div className={styles.posteTitle}>
-                                                    <h3>{emploi.poste}</h3>
-                                                    <h4>{emploi.dateDebut} {emploi.dateFin && '- ' + emploi.dateFin}</h4>
-                                                </div>
-                                                <h4>{emploi.employeur}</h4>
-                                                <ul>
-                                                    {
-                                                        emploi.description.map((point, index) => {
-                                                            return <li key={index}>{point}</li>
-                                                        })
-                                                    }
-                                                </ul>
-                                            </Paper>
+                                            <Job emploi={emploi} />
                                         </TimelineContent>
                                     </Zoom>
                                 )}

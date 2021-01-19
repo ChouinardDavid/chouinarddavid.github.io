@@ -30,62 +30,74 @@ export const skills_text = {
     sections:
         [
             {
-                id: 'developpeur',
-                title: 'Développeur',
+                id: 'Techno',
+                title: 'Technologies',
                 children:
                     [
-                        'Développement d’application Web selon les principes de développement «SOLID»',
-                        'Développement d’API «REST»',
-                        'Corriger les anomalies dans les fonctionnalités existantes',
-                        'Connaissance du parton architectural Modèle-Vue-Contrôleur (MVC)',
-
-                        {
-                            id: 'langages',
-                            title: 'Langages de programmation',
-                            children: [
-                                'C#',
-                                'VB.NET',
-                                'Javascript/Typescript',
-                                'HTML/CSS'
-                            ]
-                        },
-                        {
-                            id: 'plateformes',
-                            title: 'Plateformes (Frameworks)',
-                            children: [
-                                '.NET',
-                                '.NET Core',
-                                'React',
-                                'JQuery'
-                            ]
-                        },
-
-                        'Utilisation du gestionnaire de code source GIT',
-                        'Élaboration de rapport SSRS',
-                        'Gérer la compilation, la graduation et le déploiement d’application sous les différents paliers environnementaux à l’aide d’Azure DevOps',
-                        'Conception et utilisation d’une base de données relationnelle SQL Server'
+                        '.NET',
+                        '.NET Core',
+                        'Base de données SQL',
+                        'Rapport SSRS',
+                        'Cloud Azure',
                     ]
             },
             {
-                id: 'analyste',
-                title: 'Analyste',
+                id: 'langages',
+                title: 'Langages',
                 children:
                     [
-                        'Concevoir l’analyse organique avant d’ajouter une nouvelle fonctionnalité',
-                        'Respecter les spécifications fonctionnelles établies dans la documentation',
-                        'Discuter avec les analystes fonctionnelles pour clarifier les besoins des utilisateurs'
+                        'C#',
+                        'vb.net',
+                        'Javascript',
+                        'React',
+                        'JQuery',
+                        'HTML/CSS',
                     ]
             },
             {
-                id: 'personnel',
-                title: 'Personnel',
+                id: 'outils',
+                title: 'Outils',
                 children:
                     [
-                        'Travailler dans une équipe «Scrum» selon les principes de la méthodologie Agile',
-                        'Contribuer au processus d’amélioration continue afin de corriger et prévenir les erreurs',
-                        'Langues parlées et écrites : français et anglais'
+                        'Visual Studio',
+                        'Visual Studio Code',
+                        'SSMS',
+                        'Azure DevOps',
+                        'Git',
                     ]
-            }
+            },
+            {
+                id: 'architecturesSystemes',
+                title: 'Architectures systèmes',
+                children:
+                    [
+                        'MVC',
+                        'MVVM',
+                        'Web API',
+                        'S.O.L.I.D.',
+                        'R.E.S.T.',
+                    ]
+            },
+            {
+                id: 'autres',
+                title: 'Autres',
+                children:
+                    [
+                        "Projet d'envergure",
+                        'Tests unitaires',
+                        'Méthode agile',
+                    ]
+            },
+            {
+                id: 'saisPas',
+                title: 'À déterminer...',
+                children:
+                    [
+                        "chose",
+                        'Patente',
+                        'gogosse',
+                    ]
+            },
         ]
 }
 
@@ -165,3 +177,73 @@ export const education_text = {
     id: 'education',
     title: "Éducation"
 }
+
+
+
+
+
+
+// export const skills_text = {
+//     id: 'competences',
+//     title: 'Compétences',
+//     sections:
+//         [
+//             {
+//                 id: 'developpeur',
+//                 title: 'Développeur',
+//                 children:
+//                     [
+//                         'Développement d’application Web selon les principes de développement «SOLID»',
+//                         'Développement d’API «REST»',
+//                         'Corriger les anomalies dans les fonctionnalités existantes',
+//                         'Connaissance du parton architectural Modèle-Vue-Contrôleur (MVC)',
+
+//                         {
+//                             id: 'langages',
+//                             title: 'Langages de programmation',
+//                             children: [
+//                                 'C#',
+//                                 'VB.NET',
+//                                 'Javascript/Typescript',
+//                                 'HTML/CSS'
+//                             ]
+//                         },
+//                         {
+//                             id: 'plateformes',
+//                             title: 'Plateformes (Frameworks)',
+//                             children: [
+//                                 '.NET',
+//                                 '.NET Core',
+//                                 'React',
+//                                 'JQuery'
+//                             ]
+//                         },
+
+//                         'Utilisation du gestionnaire de code source GIT',
+//                         'Élaboration de rapport SSRS',
+//                         'Gérer la compilation, la graduation et le déploiement d’application sous les différents paliers environnementaux à l’aide d’Azure DevOps',
+//                         'Conception et utilisation d’une base de données relationnelle SQL Server'
+//                     ]
+//             },
+//             {
+//                 id: 'analyste',
+//                 title: 'Analyste',
+//                 children:
+//                     [
+//                         'Concevoir l’analyse organique avant d’ajouter une nouvelle fonctionnalité',
+//                         'Respecter les spécifications fonctionnelles établies dans la documentation',
+//                         'Discuter avec les analystes fonctionnelles pour clarifier les besoins des utilisateurs'
+//                     ]
+//             },
+//             {
+//                 id: 'personnel',
+//                 title: 'Personnel',
+//                 children:
+//                     [
+//                         'Travailler dans une équipe «Scrum» selon les principes de la méthodologie Agile',
+//                         'Contribuer au processus d’amélioration continue afin de corriger et prévenir les erreurs',
+//                         'Langues parlées et écrites : français et anglais'
+//                     ]
+//             }
+//         ]
+// }

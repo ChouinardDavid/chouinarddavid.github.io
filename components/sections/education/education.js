@@ -1,6 +1,6 @@
 import React from 'react';
 import TitleLabel from '../../titleLabel/titleLabel';
-import SectionForm from '../sectionForm/sectionsForm';
+import SectionForm from '../../sectionForm/sectionsForm';
 import { parcours_text } from '../../../labels/fr';
 // import styles from '../../styles/formations.module.scss';
 

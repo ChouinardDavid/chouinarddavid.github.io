@@ -1,4 +1,20 @@
-.customBlackLine::before {
-    background: #000000;
-}
 
+
+ .card{
+    // background-color: lightgray;
+    padding: 20px;
+    
+        .title{
+            display: flex;
+            justify-content: space-between;
+
+            & > *{
+                margin: 0px 0px 10px 0px;
+            }
+        }
+
+        .employeur{
+            margin: 0px 0px 10px 0px;
+        }
+
+    }

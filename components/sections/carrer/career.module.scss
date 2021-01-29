@@ -11,10 +11,17 @@
             & > *{
                 margin: 0px 0px 10px 0px;
             }
+
+            .date{
+                flex: 0 0 auto;
+            }
         }
 
         .employeur{
             margin: 0px 0px 10px 0px;
         }
 
+        .chip{
+            margin: 10px 0px 0px 10px;
+        }
     }

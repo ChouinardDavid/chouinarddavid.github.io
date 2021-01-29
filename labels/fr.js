@@ -39,7 +39,7 @@ export const skills_text = {
                         'Base de données SQL',
                         'Rapport SSRS',
                         'Cloud Azure',
-                    ]
+                    ],
             },
             {
                 id: 'langages',
@@ -116,7 +116,13 @@ export const parcours_text = {
                     ' Participer au développement de l’application web «Cristal-Net»',
                     'Travailler dans une équipe agile pour concevoir des nouvelles fonctionnalités',
                     "Contribuer aux discussions sur l'architecture émergente dans nos projets"
-                ]
+                ],
+                chips:
+                    [
+                        '.NET',
+                        'Javascript',
+                        'SQL',
+                    ]
             },
             {
                 domaine: domaines.info,
@@ -128,7 +134,13 @@ export const parcours_text = {
                     'Améliorer et entretenir les applications corporatives du département de la compatibilité',
                     "Exercer le rôle de «Release manager» pour assurer l'intégration continue",
                     'Assurer un support de premier niveau aux utilisateurs dans un environnement «DevOps»'
-                ]
+                ],
+                chips:
+                    [
+                        '.NET',
+                        'Javascript',
+                        'SQL',
+                    ]
             },
             {
                 domaine: domaines.bio,
@@ -167,7 +179,7 @@ export const parcours_text = {
                     'Procéder à l’envoi des commandes aux clients et assurer un suivi',
                     'Améliorer le processus de livraison des commandes en écrivant des procédures opératoires',
                     'normalisées. Cela a permis de diminuer les erreurs de manutention'
-                ],
+                ]
             },
         ]
 }

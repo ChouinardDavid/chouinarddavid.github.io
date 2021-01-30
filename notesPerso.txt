@@ -1,0 +1,5 @@
+
+        "dev": "next dev",
+        "devdebug": "cross-env NODE_OPTIONS='--inspect' next dev",
+        "build": "next build && next export -o docs",
+        "start": "next start"

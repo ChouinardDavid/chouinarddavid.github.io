@@ -1,0 +1,24 @@
+
+
+.groupCourses{
+    display: flex;
+    flex-wrap: wrap;
+
+
+    .coursePaper{
+        margin: 20px 30px;
+        flex: 1 1 25%;
+
+        .course{
+            display: flex;
+            flex-direction: column;
+            min-width: 350px;
+            text-align: center;
+            height: 100%;
+
+            .title{
+                 flex: 1 1 auto;    
+            }
+        }
+    }
+}

@@ -7,16 +7,16 @@ const DisplaySkill = (props) => {
     const { title, skills, ...rest } = props;
 
     return (
-        <>
+        <div className={styles.groupskills}>
             {skills.map((skill, index) => {
                 return (
-                    <Paper elevation={3} className={styles.skillCard}>
+                    <Paper key={skill} elevation={3} className={styles.skill}>
                         {skill}
                     </Paper>
                 );
             }
             )}
-        </>
+        </div>
     )
 };
 

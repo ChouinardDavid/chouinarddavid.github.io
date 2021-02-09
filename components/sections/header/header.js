@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './header.module.scss';
-import TitleLabel from '../../titleLabel/titleLabel';
+import TitleLabel from '../../utils/titleLabel/titleLabel';
 
 
 const Header = (props) => {

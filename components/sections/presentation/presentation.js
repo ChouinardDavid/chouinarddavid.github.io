@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './presentation.module.scss';
-import SectionForm from '../../sectionForm/sectionsForm';
-import TitleLabel from '../../titleLabel/titleLabel';
+import SectionForm from '../../utils/sectionForm/sectionsForm';
+import TitleLabel from '../../utils/titleLabel/titleLabel';
 import Paper from '@material-ui/core/Paper';
 
 const Presentation = (props) => {

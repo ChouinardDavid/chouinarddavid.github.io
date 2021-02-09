@@ -187,75 +187,34 @@ export const parcours_text = {
 
 export const education_text = {
     id: 'education',
-    title: "Éducation"
+    title: "Éducation",
+    courses: [
+        {
+            title: 'DEC en techniques de l’informatique',
+            school: 'Cégep de Sainte-Foy, Québec',
+            year: '2018',
+        },
+        {
+            title: 'Certificat en biotechnologie',
+            school: 'Université Laval, Québec ',
+            year: '2012',
+        },
+        {
+            title: 'DEC en techniques de bioécologie',
+            school: 'Cégep Saint-Laurent, Montréal',
+            year: '2010',
+        }
+    ]
 }
 
 
-
-
-
-
-// export const skills_text = {
-//     id: 'competences',
-//     title: 'Compétences',
-//     sections:
-//         [
-//             {
-//                 id: 'developpeur',
-//                 title: 'Développeur',
-//                 children:
-//                     [
-//                         'Développement d’application Web selon les principes de développement «SOLID»',
-//                         'Développement d’API «REST»',
-//                         'Corriger les anomalies dans les fonctionnalités existantes',
-//                         'Connaissance du parton architectural Modèle-Vue-Contrôleur (MVC)',
-
-//                         {
-//                             id: 'langages',
-//                             title: 'Langages de programmation',
-//                             children: [
-//                                 'C#',
-//                                 'VB.NET',
-//                                 'Javascript/Typescript',
-//                                 'HTML/CSS'
-//                             ]
-//                         },
-//                         {
-//                             id: 'plateformes',
-//                             title: 'Plateformes (Frameworks)',
-//                             children: [
-//                                 '.NET',
-//                                 '.NET Core',
-//                                 'React',
-//                                 'JQuery'
-//                             ]
-//                         },
-
-//                         'Utilisation du gestionnaire de code source GIT',
-//                         'Élaboration de rapport SSRS',
-//                         'Gérer la compilation, la graduation et le déploiement d’application sous les différents paliers environnementaux à l’aide d’Azure DevOps',
-//                         'Conception et utilisation d’une base de données relationnelle SQL Server'
-//                     ]
-//             },
-//             {
-//                 id: 'analyste',
-//                 title: 'Analyste',
-//                 children:
-//                     [
-//                         'Concevoir l’analyse organique avant d’ajouter une nouvelle fonctionnalité',
-//                         'Respecter les spécifications fonctionnelles établies dans la documentation',
-//                         'Discuter avec les analystes fonctionnelles pour clarifier les besoins des utilisateurs'
-//                     ]
-//             },
-//             {
-//                 id: 'personnel',
-//                 title: 'Personnel',
-//                 children:
-//                     [
-//                         'Travailler dans une équipe «Scrum» selon les principes de la méthodologie Agile',
-//                         'Contribuer au processus d’amélioration continue afin de corriger et prévenir les erreurs',
-//                         'Langues parlées et écrites : français et anglais'
-//                     ]
-//             }
-//         ]
-// }
+export const certfications_text = {
+    id: 'certification',
+    title: 'Certification',
+    certifications: [
+        {
+            titre: 'Microsoft Certified: Azure Fundamentals',
+            image: '/azure_fundamentals.png'
+        }
+    ]
+}

@@ -2,11 +2,11 @@
 
 .skillsSection{
 
-    .skillsCards{
+    .groupskillsPapers{
         display: flex;
         flex-wrap: wrap;
         
-        .card{
+        .skillsPaper{
             margin: 20px 30px;
             flex: 1 1 25%;
             background-color: lightgray;
@@ -14,12 +14,15 @@
             .title{
                 text-align: center;
             }
-    
-            .skillCard {
-                margin: 15px 50px;
-                padding: 10px 0px;
-                min-width: 200px;
-                text-align: center;
+            
+            .groupskills{
+                min-width: 300px;
+                
+                .skill {
+                    margin: 15px 50px;
+                    padding: 10px 0px;
+                    text-align: center;
+                }
             }
         }
     }

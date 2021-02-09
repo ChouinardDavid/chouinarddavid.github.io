@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './header.module.scss';
-import SectionForm from '../../sectionForm/sectionsForm';
+import SectionForm from '../../utils/sectionForm/sectionsForm';
 import TitleLabel from '../../titleLabel/titleLabel';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';

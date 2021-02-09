@@ -10,6 +10,7 @@ import Certification from '../components/sections/certifications/certification';
 
 
 
+
 export default function Home() {
     return (
         <>

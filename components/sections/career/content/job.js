@@ -1,7 +1,6 @@
-import styles from './career.module.scss';
+import styles from './../career.module.scss';
 import Paper from '@material-ui/core/Paper';
 import Chip from '@material-ui/core/Chip';
-import { useTheme } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -22,7 +21,7 @@ const Job = (props) => {
     const classes = useStyles();
 
     return (
-        <Paper elevation={3} className={styles.card}>
+        <Paper elevation={3} className={styles.job}>
             <div className={classes.date}>
                 <h2 className={styles.poste}>{emploi.poste}</h2>
                 <h3 className={styles.dates}>{emploi.dateDebut}{emploi.dateFin && ' - ' + emploi.dateFin}</h3>

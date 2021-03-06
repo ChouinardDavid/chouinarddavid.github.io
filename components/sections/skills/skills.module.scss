@@ -5,22 +5,30 @@
     .groupskillsPapers{
         display: flex;
         flex-wrap: wrap;
+        margin-top: -30px;
+        margin-bottom: -30px;
         
         .skillsPaper{
-            margin: 20px 30px;
+            margin: 30px;
             flex: 1 1 25%;
-            background-color: lightgray;
-        
+            // background-color: #d5dee0;
+            background-color: #e6e6e6;
+            min-width: 300px;
+            max-width: 400px;
+            
             .title{
                 text-align: center;
             }
             
             .groupskills{
-                min-width: 300px;
+                // min-width: 300px;
+                // max-width: 400px;
                 
                 .skill {
                     margin: 15px 50px;
                     padding: 10px 0px;
+                    border: 1px solid #808080;
+                    // background-color: #80ccff;
                     text-align: center;
                 }
             }

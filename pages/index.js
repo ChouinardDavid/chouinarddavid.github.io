@@ -7,23 +7,25 @@ import Education from '../components/sections/education/education';
 import Container from '@material-ui/core/Container';
 import * as labels from '../labels/fr';
 import Certification from '../components/sections/certifications/certification';
+import Interest from '../components/sections/Interests/interest';
 
 
 
 
 export default function Home() {
     return (
-        <>
+        <div >
             <Header labels={labels.header_text} />
-            <Container id='App' disableGutters>
+            <Container id='App' maxWidth="lg">
                 <div className={styles.containerFlex} >
                     <Presentation labels={labels.presentation_text} />
                     <Skills labels={labels.skills_text} />
                     <Career labels={labels.parcours_text} />
                     <Education labels={labels.education_text} />
                     <Certification labels={labels.certfications_text} />
+                    <Interest labels={labels.interests_text} />
                 </div>
             </Container>
-        </>
+        </div>
     );
 }

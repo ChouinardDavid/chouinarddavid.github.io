@@ -10,7 +10,7 @@ import Zoom from '@material-ui/core/Zoom';
 
 
 const TimeLineUnit = (props) => {
-    const { contenu, icon } = props
+    const { content, icon } = props
 
     const removeBeforeCssClass = input => {
         if (input)
@@ -20,17 +20,18 @@ const TimeLineUnit = (props) => {
     return (
         <TimelineItem ref={removeBeforeCssClass}>
             <TimelineSeparator>
-                <TimelineDot color="primary">
+                {/* <TimelineDot color="primary"> */}
+                <TimelineDot>
                     {icon}
                 </TimelineDot>
                 <TimelineConnector className={styles.customBlackLine} />
             </TimelineSeparator>
             <InView threshold={0.75} triggerOnce>
-                {contenu &&
+                {content &&
                     (({ inView, ref, entry }) => (
                         <Zoom in={inView} timeout={900}>
                             <TimelineContent ref={ref} className={styles.item}>
-                                {contenu}
+                                {content}
                             </TimelineContent>
                         </Zoom>
                     ))}

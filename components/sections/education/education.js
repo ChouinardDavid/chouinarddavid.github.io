@@ -10,11 +10,13 @@ const Education = (props) => {
     return (
         <SectionForm id={labels.id} {...rest}>
             <TitleLabel titleName={labels.title} />
+            {/* <div className={styles.groupCoursesContainer}> */}
             <div className={styles.groupCourses}>
                 {labels.courses.map((course, index) =>
                     <Course key={course.year} course={course} />
                 )}
             </div>
+            {/* </div> */}
         </SectionForm>
     );
 };

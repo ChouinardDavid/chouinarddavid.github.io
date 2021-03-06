@@ -1,4 +1,4 @@
-
+import { faLeaf, faMicroscope, faGolfBall, faTv, faBook, faHandSpock, faChessKnight, faHamburger, faFlask, faHockeyPuck, faCode, daDna, faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import { domaines } from './domaines';
 
 
@@ -8,7 +8,7 @@ import { domaines } from './domaines';
 
 export const header_text = {
     id: 'header',
-    title: "David Chouinard-Lavoie",
+    title: 'David Chouinard-Lavoie',
     addLink: false,
 }
 
@@ -39,6 +39,7 @@ export const skills_text = {
                         'Base de données SQL',
                         'Rapport SSRS',
                         'Cloud Azure',
+                        'NextJs'
                     ],
             },
             {
@@ -64,6 +65,7 @@ export const skills_text = {
                         'SSMS',
                         'Azure DevOps',
                         'Git',
+                        'Postman'
                     ]
             },
             {
@@ -83,7 +85,7 @@ export const skills_text = {
                 title: 'Autres',
                 children:
                     [
-                        "Projet d'envergure",
+                        'Projet d\'envergure',
                         'Tests unitaires',
                         'Méthode agile',
                     ]
@@ -93,7 +95,7 @@ export const skills_text = {
                 title: 'À déterminer...',
                 children:
                     [
-                        "chose",
+                        'chose',
                         'Patente',
                         'gogosse',
                     ]
@@ -109,13 +111,13 @@ export const parcours_text = {
             {
                 domaine: domaines.info,
                 employeur: 'CHU de Québec, Québec',
-                poste: 'Développeur',
-                dateDebut: '2019',
+                poste: 'Technicien en informatique (développeur)',
+                dateDebut: 'août 2019',
                 dateFin: 'auj.',
                 description: [
                     ' Participer au développement de l’application web «Cristal-Net»',
                     'Travailler dans une équipe agile pour concevoir des nouvelles fonctionnalités',
-                    "Contribuer aux discussions sur l'architecture émergente dans nos projets"
+                    'Contribuer aux discussions sur l\'architecture émergente dans nos projets'
                 ],
                 chips:
                     [
@@ -126,13 +128,14 @@ export const parcours_text = {
             },
             {
                 domaine: domaines.info,
+                retourEcole: true,
                 employeur: 'Industrielle Alliance, Québec',
                 poste: 'Développeur',
-                dateDebut: '2018',
-                dateFin: '2019',
+                dateDebut: ' sept. 2018',
+                dateFin: ' août 2019',
                 description: [
                     'Améliorer et entretenir les applications corporatives du département de la compatibilité',
-                    "Exercer le rôle de «Release manager» pour assurer l'intégration continue",
+                    'Exercer le rôle de «Release manager» pour assurer l\'intégration continue',
                     'Assurer un support de premier niveau aux utilisateurs dans un environnement «DevOps»'
                 ],
                 chips:
@@ -146,8 +149,8 @@ export const parcours_text = {
                 domaine: domaines.bio,
                 employeur: 'GSK, Québec',
                 poste: 'Technicien de production',
-                dateDebut: '2014',
-                dateFin: '2017',
+                dateDebut: 'nov. 2014',
+                dateFin: 'févr. 2017',
                 description: [
                     'Opérer les systèmes de remplissage de vaccin en salle blanche',
                     'Participer au projet de validation des nouvelles lignes de remplissage',
@@ -159,7 +162,8 @@ export const parcours_text = {
                 domaine: domaines.bio,
                 employeur: 'BD Diagnostics, Québec',
                 poste: 'Technicien au contrôle de la qualité',
-                dateDebut: '2014',
+                dateDebut: 'janv. 2014',
+                dateFin: 'oct. 2014',
                 description: [
                     'Effectuer le contrôle de la qualité sur les composantes du produit',
                     'Préparer le rapport d’analyse pour l’assurance qualité',
@@ -170,8 +174,8 @@ export const parcours_text = {
                 domaine: domaines.bio,
                 employeur: 'Feldan',
                 poste: 'Technicien de laboratoire',
-                dateDebut: '2012',
-                dateFin: '2014',
+                dateDebut: 'mai 2012',
+                dateFin: 'janv. 2014',
                 description: [
                     'Participer aux activités de production et aux projets de recherche et développement',
                     'Opérer les différents équipements du laboratoire de biologie moléculaire',
@@ -187,7 +191,7 @@ export const parcours_text = {
 
 export const education_text = {
     id: 'education',
-    title: "Éducation",
+    title: 'Éducation',
     courses: [
         {
             title: 'DEC en techniques de l’informatique',
@@ -210,11 +214,71 @@ export const education_text = {
 
 export const certfications_text = {
     id: 'certification',
-    title: 'Certification',
+    title: 'Certifications',
     certifications: [
         {
             titre: 'Microsoft Certified: Azure Fundamentals',
-            image: '/azure_fundamentals.png'
+            image: '/azure-fundamentals.png',
+            link: 'https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals'
         }
+    ]
+}
+
+
+
+export const interests_text = {
+    id: 'interest',
+    title: 'Intérêts',
+    interests: [
+        {
+            title: 'Plein air',
+            icon: faLeaf,
+            color: 'green',
+        },
+        {
+            title: 'Science',
+            icon: faMicroscope,
+            color: '#3963e3',
+        },
+        {
+            title: 'Golf',
+            icon: faGolfBall,
+            color: '#c5c8c9',
+        },
+        {
+            title: 'Cinéma',
+            icon: faTv,
+            color: 'black',
+        },
+        {
+            title: 'Brassage de bière',
+            icon: faFlask,
+            color: '#b3b8c7',
+        },
+        {
+            title: 'Lecture',
+            icon: faBook,
+            color: '#bf5039',
+        },
+        {
+            title: 'Hockey',
+            icon: faHockeyPuck,
+            color: 'black',
+        },
+        {
+            title: 'Science fiction',
+            icon: faHandSpock,
+            color: 'lightGreen',
+        },
+        {
+            title: 'Cuisine',
+            icon: faHamburger,
+            color: '#a68a6d',
+        },
+        {
+            title: 'Jeux de société',
+            icon: faChessKnight,
+            color: 'black',
+        },
     ]
 }

@@ -4,11 +4,13 @@ const SectionForm = (props) => {
     const { id, children, ...rest } = props;
     return (
         <>
-            {/* <span id={id} ></span> */}
-            <div {...rest} >{children}</div>
+            <div {...rest}>
+                {children}
+            </div>
+
             <style jsx>{`
 				div {
-                    margin-top: 75px;
+                    margin-bottom: 75px;
                 }
 
 

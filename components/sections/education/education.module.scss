@@ -1,32 +1,22 @@
 
 
-// .groupCoursesContainer{
-//     margin: 0 auto;
-//     // max-width: 1080px;
-//     // max-width: max-content;
 
+.groupCourses{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 20px;
+    justify-content: center;
 
-    .groupCourses{
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: -30px;
-        margin-bottom: -30px;
+    .coursePaper{
+        .course{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            height: 100%;
 
-        .coursePaper{
-            margin: 30px;
-            // flex: 1 1 25%;
-            width: 300px;
-
-            .course{
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                height: 100%;
-
-                .title{
-                    flex: 1 1 auto;    
-                }
+            .title{
+                flex: 1 1 auto;    
             }
         }
     }
-// }
+}

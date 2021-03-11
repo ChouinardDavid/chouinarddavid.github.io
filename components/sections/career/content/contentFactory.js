@@ -1,59 +1,49 @@
 import React from 'react';
 import styles from '.././career.module.scss';
 import TimeLineUnit from '../../../utils/timeLine/TimeLineUnit';
-import WorkIcon from '@material-ui/icons/Work';
 import Job from './job';
 import StarIcon from '@material-ui/icons/Star';
 import BackToSchool from './backToSchool';
-import TimelineContent from '@material-ui/lab/TimelineContent';
+import { faCode, faDna, faGraduationCap, faLaptopCode, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
+import { contentType } from '../../../../labels/domaines'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
-
-export const ContentType = {
-
-    backToSchool: "backToSchool",
-    job: "job",
-    start: "start"
-
-}
-
-
-
-export function Create(type, ref, options) {
+const ContentFactory = (props) => {
+    const { type, content, ...rest } = props;
 
     switch (type) {
-        case ContentType.backToSchool:
-
-            <TimelineContent ref={ref} className={styles.backToSchool}>
+        case contentType.backToSchool:
+            return (
                 <TimeLineUnit
-                    icon={<StarIcon fontSize="large" />}
+                    icon={<FontAwesomeIcon icon={faGraduationCap} size="2x" color="black" />}
                     content={<BackToSchool />}
                 />
-            </TimelineContent>
-            break;
+            )
 
-        case ContentType.job:
-            <TimelineContent ref={ref} className={styles.job}>
+        case contentType.informatique:
+            return (
                 <TimeLineUnit
-                    key={options.employeur}
-                    icon={<WorkIcon fontSize="large" />}
-                    content={<Job emploi={options} />}
+                    icon={<FontAwesomeIcon icon={faLaptopCode} size="2x" color="black" />}
+                    content={<Job emploi={content} />}
                 />
-            </TimelineContent>
-            break;
+            )
 
-        case ContentType.start:
-            <TimelineContent ref={ref} className={styles.start}>
+        case contentType.biologie:
+            return (
+                <TimeLineUnit
+                    icon={<FontAwesomeIcon icon={faDna} size="2x" color="black" />}
+                    content={<Job emploi={content} />}
+                />
+            )
+
+        case contentType.start:
+            return (
                 <TimeLineUnit
                     icon={<StarIcon fontSize="large" />}
                 />
-            </TimelineContent>
-            break;
-
-        default:
-            break;
+            )
     }
-
-
 }
 
+export default ContentFactory;

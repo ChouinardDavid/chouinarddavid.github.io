@@ -1,5 +1,5 @@
 import { faLeaf, faMicroscope, faGolfBall, faTv, faBook, faHandSpock, faChessKnight, faHamburger, faFlask, faHockeyPuck, faCode, daDna, faGraduationCap } from '@fortawesome/free-solid-svg-icons'
-import { domaines } from './domaines';
+import { domaines, contentType } from './domaines';
 
 
 // export const home_text = {
@@ -109,7 +109,7 @@ export const parcours_text = {
     emplois:
         [
             {
-                domaine: domaines.info,
+                type: contentType.informatique,
                 employeur: 'CHU de Québec, Québec',
                 poste: 'Technicien en informatique (développeur)',
                 dateDebut: 'août 2019',
@@ -127,7 +127,7 @@ export const parcours_text = {
                     ]
             },
             {
-                domaine: domaines.info,
+                type: contentType.informatique,
                 retourEcole: true,
                 employeur: 'Industrielle Alliance, Québec',
                 poste: 'Développeur',
@@ -146,7 +146,10 @@ export const parcours_text = {
                     ]
             },
             {
-                domaine: domaines.bio,
+                type: contentType.backToSchool,
+            },
+            {
+                type: contentType.biologie,
                 employeur: 'GSK, Québec',
                 poste: 'Technicien de production',
                 dateDebut: 'nov. 2014',
@@ -159,7 +162,7 @@ export const parcours_text = {
                 ]
             },
             {
-                domaine: domaines.bio,
+                type: contentType.biologie,
                 employeur: 'BD Diagnostics, Québec',
                 poste: 'Technicien au contrôle de la qualité',
                 dateDebut: 'janv. 2014',
@@ -171,7 +174,7 @@ export const parcours_text = {
                 ]
             },
             {
-                domaine: domaines.bio,
+                type: contentType.biologie,
                 employeur: 'Feldan',
                 poste: 'Technicien de laboratoire',
                 dateDebut: 'mai 2012',
@@ -223,6 +226,14 @@ export const certfications_text = {
         }
     ]
 }
+
+export const projects_text = {
+    id: 'projects',
+    title: 'Projets',
+}
+
+
+
 
 
 

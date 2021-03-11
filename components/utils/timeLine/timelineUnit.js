@@ -21,7 +21,7 @@ const TimeLineUnit = (props) => {
         <TimelineItem ref={removeBeforeCssClass}>
             <TimelineSeparator>
                 {/* <TimelineDot color="primary"> */}
-                <TimelineDot>
+                <TimelineDot className={styles.timelineDot}>
                     {icon}
                 </TimelineDot>
                 <TimelineConnector className={styles.customBlackLine} />

@@ -8,6 +8,7 @@ import Container from '@material-ui/core/Container';
 import * as labels from '../labels/fr';
 import Certification from '../components/sections/certifications/certification';
 import Interest from '../components/sections/Interests/interest';
+import Projects from './../components/sections/projects/project';
 
 
 
@@ -22,6 +23,7 @@ export default function Home() {
                     <Skills labels={labels.skills_text} />
                     <Career labels={labels.parcours_text} />
                     <Education labels={labels.education_text} />
+                    <Projects labels={labels.projects_text} />
                     <Certification labels={labels.certfications_text} />
                     <Interest labels={labels.interests_text} />
                 </div>

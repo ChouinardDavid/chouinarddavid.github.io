@@ -14,3 +14,15 @@ $infoBaseColor:  rgb(60,179,113);
 .item{
     margin-bottom: 75px;
 }
+
+
+.timelineDot{
+    height: 60px;
+    width: 60px;
+
+    & > *:first-child{
+        margin: auto;
+    }
+
+
+}

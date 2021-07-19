@@ -1,24 +1,30 @@
-import React from 'react';
-import TitleLabel from '../../utils/titleLabel/titleLabel';
+import { faRocket } from '@fortawesome/free-solid-svg-icons'
 import SectionForm from '../../utils/sectionForm/sectionsForm';
 import styles from './career.module.scss';
 import Timeline from '@material-ui/lab/Timeline';
-import ContentFactory from './content/contentFactory';
-import { contentType } from '../../../labels/domaines'
+import TimeLineUnit from '../../utils/timeLine/TimeLineUnit';
 
 const Career = (props) => {
     const { labels, ...rest } = props;
 
     return (
-        <SectionForm id={labels.id} {...rest}>
-            <TitleLabel titleName={labels.title} />
+        <SectionForm id={labels.id} title={labels.title} {...rest}>
             <Timeline align="left" className={styles.timeline}>
-                {labels.emplois.map((content, index) => {
+                {labels.emplois.map((emploi, index) => {
                     return (
-                        <ContentFactory type={content.type} content={content} />
+                        <TimeLineUnit
+                            key={index}
+                            icon={emploi.icon}
+                            color={emploi.color}
+                            render={emploi.render}
+                            content={emploi.content}
+                        />
                     )
                 })}
-                <ContentFactory type={contentType.start} />
+                <TimeLineUnit
+                    icon={faRocket}
+                    color="primary"
+                />
             </Timeline>
         </SectionForm>
     );

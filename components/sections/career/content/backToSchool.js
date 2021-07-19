@@ -1,14 +1,18 @@
 import styles from './../career.module.scss';
 import Paper from '@material-ui/core/Paper';
+import Link from 'next/link'
 
 
 
 const BackToSchool = (props) => {
+    const { content } = props
 
     return (
         <Paper elevation={3} className={styles.backToSchool}>
-            <h2 className={styles.poste}>Retour à l'école</h2>
-            <h3 className={styles.dates}>févr. 2016 - déc. 2018</h3>
+            <Link href="#education">
+                <a><h2 className={styles.poste}>{content.title}</h2></a>
+            </Link>
+            <h3 className={styles.dates}>{content.dates}</h3>
         </Paper>
     );
 };

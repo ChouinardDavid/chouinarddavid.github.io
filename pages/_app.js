@@ -1,25 +1,15 @@
 import '../styles/globals.css';
 import Head from 'next/head';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import { ThemeProvider } from '@material-ui/core/styles';
-
-
-// function MyApp({ Component, pageProps }) {
-//     return (
-//         <Component {...pageProps} />
-//     )
-// }
-
-// const theme = {
-//     marginRight: 5,
-//     padding: 5,
-// };
-
+import { MuiThemeProvider } from '@material-ui/core/styles';
+import createMyMuiTheme from '../styles/createMyMuiTheme';
 
 
 
 function MyApp(props) {
     const { Component, pageProps } = props;
+
+    const myMuiTheme = createMyMuiTheme();
 
     React.useEffect(() => {
         // Remove the server-side injected CSS.
@@ -44,23 +34,29 @@ function MyApp(props) {
                 {/* <!-- Open Graph / Facebook --> */}
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://chouinarddavid.github.io/" />
-                <meta property="og:title" content="David Chouinard-Lavoie" />
-                <meta property="og:description" content="Une description de mon site" />
+                <meta property="og:title" content="David Chouinard" />
+                <meta property="og:description" content="Consulter ma page web pour plus de détails sur mon parcourt professionnel" />
                 <meta property="og:image" content='/photoPerso.png' />
 
                 {/* <!-- Twitter --> */}
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:url" content="https://chouinarddavid.github.io/" />
-                <meta property="twitter:title" content="David Chouinard-Lavoie" />
-                <meta property="twitter:description" content="Une description de mon site" />
+                <meta property="twitter:title" content="David Chouinard" />
+                <meta property="twitter:description" content="Consulter ma page web pour plus de détails sur mon parcourt professionnel" />
                 <meta property="twitter:image" content='/photoPerso.png' />
 
             </Head>
-            {/* <ThemeProvider theme={theme}> */}
-            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-            {/* <CssBaseline /> */}
-            <Component {...pageProps} />
+            {/* <ContextWrapper> */}
+            {/* <ThemeProvider> */}
+
+            <MuiThemeProvider theme={myMuiTheme}>
+                {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+                <CssBaseline />
+                <Component {...pageProps} />
+            </MuiThemeProvider>
+
             {/* </ThemeProvider> */}
+            {/* </ContextWrapper> */}
         </>
     );
 }

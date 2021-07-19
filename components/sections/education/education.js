@@ -8,8 +8,7 @@ const Education = (props) => {
     const { labels, ...rest } = props;
 
     return (
-        <SectionForm id={labels.id} {...rest}>
-            <TitleLabel titleName={labels.title} />
+        <SectionForm id={labels.id} title={labels.title} {...rest}>
             <div className={styles.groupCourses}>
                 {labels.courses.map((course, index) =>
                     <Course key={course.year} course={course} />

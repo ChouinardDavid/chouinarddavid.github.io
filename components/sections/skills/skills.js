@@ -1,5 +1,4 @@
 import React from 'react';
-import TitleLabel from '../../utils/titleLabel/titleLabel';
 import SectionForm from '../../utils/sectionForm/sectionsForm';
 import styles from './skills.module.scss';
 import DisplaySkill from './displaySkills';
@@ -9,8 +8,7 @@ const Skills = (props) => {
     const { labels, ...rest } = props;
 
     return (
-        <SectionForm id={labels.id} className={styles.skillsSection}>
-            <TitleLabel titleName={labels.title} />
+        <SectionForm id={labels.id} title={labels.title}>
             <div className={styles.groupskillsPapers}>
                 {labels.sections.map((section) => {
                     return (

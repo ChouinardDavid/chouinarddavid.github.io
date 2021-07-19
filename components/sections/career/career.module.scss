@@ -2,8 +2,8 @@
 
 .timeline{
     margin-top: 0px;
+    padding: 0px !important;
 }
-
 
 .job{
     padding: 20px;
@@ -14,18 +14,17 @@
     .dates{
         margin: 0px 0px 10px 0px;
     }
+    .description{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 .backToSchool{
     padding: 20px;
-    // background-color: #d5dee0 !important;
     background-color: #e6e6e6 !important;
     display: flex;
     justify-content: space-between;
-
-    // .dates{
-    //     margin: 0px 0px 10px 0px;
-    // }
 }
 
 .employeur{
@@ -34,6 +33,5 @@
 
 .chip{
     margin: 10px 0px 0px 10px;
-    // background-color: #d5dee0 !important;
     background-color: #e6e6e6 !important;
 }

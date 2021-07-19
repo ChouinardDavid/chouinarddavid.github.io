@@ -12,34 +12,30 @@ const useStyles = makeStyles((theme) => ({
             flexDirection: 'column',
         }
     },
-
 }));
 
 
 const Job = (props) => {
-    const { emploi } = props
+    const { content } = props
     const classes = useStyles();
 
     return (
         <Paper elevation={3} className={styles.job}>
             <div className={classes.date}>
-                <h2 className={styles.poste}>{emploi.poste}</h2>
-                <h3 className={styles.dates}>{emploi.dateDebut}{emploi.dateFin && ' - ' + emploi.dateFin}</h3>
+                <h2 className={styles.poste}>{content.poste}</h2>
+                <h3 className={styles.dates}>{content.dateDebut}{content.dateFin && ' - ' + content.dateFin}</h3>
             </div>
-            <h4 className={styles.employeur}>{emploi.employeur}</h4>
-            <ul>
-                {
-                    emploi.description.map((point, index) => {
-                        return <li key={index}>{point}</li>
-                    })
-                }
-            </ul>
+            <h4 className={styles.employeur}>{content.employeur}</h4>
+
+            <div className={styles.description} dangerouslySetInnerHTML={{ __html: content.description }}></div>
+
             <div>
-                {emploi.chips && emploi.chips.map((chip, index) => {
+                {content.chips && content.chips.map((chip, index) => {
                     return <Chip key={chip} label={chip} className={styles.chip}></Chip>
                 })}
             </div>
         </Paper>
     );
 };
+
 export default Job;

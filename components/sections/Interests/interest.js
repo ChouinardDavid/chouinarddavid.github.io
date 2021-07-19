@@ -10,8 +10,7 @@ const Interest = (props) => {
     const { labels, ...rest } = props;
 
     return (
-        <SectionForm id={labels.id} {...rest}>
-            <TitleLabel titleName={labels.title} />
+        <SectionForm id={labels.id} title={labels.title} {...rest}>
             <div className={styles.interestGroup}>
                 {labels.interests.map((interest, index) => {
                     return (

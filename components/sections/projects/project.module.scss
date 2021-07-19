@@ -1,2 +1,38 @@
 
 
+.card{
+    padding: 20px;
+    display: grid;
+    // grid-template-columns: 300px auto;
+    // grid-template-rows: 160px auto;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 75% 25%;
+    gap: 10px;
+    place-items: start start;
+    // grid-template-areas: 
+    // "picture description"
+    // "chips description";
+    grid-auto-flow: column;
+
+    .picture{
+        grid-area: "picture";
+        width: 220px;
+        height: auto;
+    }
+
+    .chipsContent{
+        grid-area: "chips";
+        .chip{
+            margin-right: 10px;
+            // margin-top: 10px;
+            // background-color: #d5dee0 !important;
+            background-color: #e6e6e6 !important;
+        }
+    }
+
+    .description{
+        grid-area: "description";
+
+    }
+}
+

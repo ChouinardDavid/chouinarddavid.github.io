@@ -1,28 +1,28 @@
 
 
-.skillsSection{
-    .groupskillsPapers{
-        display: grid;
-        // grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
-        grid-template-columns: repeat(auto-fill, 350px);
-        gap: 20px;
-        justify-content: center;
 
-        .skillsPaper{
-            background-color: #e6e6e6;
 
-            .title{
+
+.groupskillsPapers{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 340px));
+    gap: 30px;
+    justify-content: center;
+
+    .skillsPaper{
+        background-color: #e6e6e6;
+        padding-bottom: 20px;
+
+        .title{
+            text-align: center;
+        }
+        
+        .groupskills{
+            .skill {
+                margin: 15px 50px;
+                padding: 10px 0px;
+                border: 1px solid #808080;
                 text-align: center;
-            }
-            
-            .groupskills{
-                .skill {
-                    margin: 15px 50px;
-                    padding: 10px 0px;
-                    border: 1px solid #808080;
-                    // background-color: #80ccff;
-                    text-align: center;
-                }
             }
         }
     }

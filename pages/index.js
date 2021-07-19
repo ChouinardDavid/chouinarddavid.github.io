@@ -1,19 +1,21 @@
 import styles from '../styles/app.module.scss';
 import Header from '../components/sections/header/header';
+import Footer from '../components/sections/footer/footer';
 import Presentation from '../components/sections/presentation/presentation';
 import Skills from '../components/sections/skills/skills';
 import Career from '../components/sections/career/career';
 import Education from '../components/sections/education/education';
 import Container from '@material-ui/core/Container';
+// import labels from '../labels/fr2';
 import * as labels from '../labels/fr';
 import Certification from '../components/sections/certifications/certification';
 import Interest from '../components/sections/Interests/interest';
 import Projects from './../components/sections/projects/project';
 
-
-
-
 export default function Home() {
+
+    // const labels = labels2()
+
     return (
         <div >
             <Header labels={labels.header_text} />
@@ -28,6 +30,7 @@ export default function Home() {
                     <Interest labels={labels.interests_text} />
                 </div>
             </Container>
+            <Footer labels={labels.footer_text} />
         </div>
     );
 }

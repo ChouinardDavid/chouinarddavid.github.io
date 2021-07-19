@@ -13,8 +13,7 @@ const Certification = (props) => {
     const { labels, ...rest } = props;
 
     return (
-        <SectionForm id={labels.id} {...rest}>
-            <TitleLabel titleName={labels.title} />
+        <SectionForm id={labels.id} title={labels.title} {...rest}>
             <div>
                 {
                     labels.certifications.map((certification, index) => {
@@ -26,9 +25,9 @@ const Certification = (props) => {
                             height={500} /> */}
 
                                 <img className={styles.image} src={certification.image} />
-                                <Link href={certification.link} underline='always'>
+                                <a href={certification.link}>
                                     <h2>Microsoft Certified: Azure Fundamentals</h2>
-                                </Link>
+                                </a>
                             </Paper>
                         )
                     })

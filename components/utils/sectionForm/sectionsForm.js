@@ -1,28 +1,18 @@
-import React from 'react';
+import TitleLabel from '../titleLabel/titleLabel';
+import styles from './sectionForm.module.scss';
 
 const SectionForm = (props) => {
-    const { id, children, ...rest } = props;
+    const { title, children, ...rest } = props;
     return (
-        <>
-            <div {...rest}>
-                {children}
+        <div className={styles.sectionForm} {...rest}>
+            <div className={styles.title}>
+                <TitleLabel titleName={title} />
             </div>
 
-            <style jsx>{`
-				div {
-                    margin-bottom: 75px;
-                }
-
-
-                // Permet d'Afficher la page à la bonne hauteur (entête static) lors d'un click sur le lien d'une section
-                // span {
-                //     display: block;
-                //     height: 180px; /*same height as header*/
-                //     margin-top: -180px; /*same height as header*/
-                //     visibility: hidden;
-                // }
-			`}</style>
-        </>
+            <div className={styles.content}>
+                {children}
+            </div>
+        </div>
     );
 };
 

@@ -6,23 +6,21 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import { InView } from 'react-intersection-observer';
 import Zoom from '@material-ui/core/Zoom';
+import useRemoveCssClass from '../hooks/useRemoveCssClass';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useTheme } from '@material-ui/core/styles';
 
 
 
 const TimeLineUnit = (props) => {
-    const { content, icon } = props
-
-    const removeBeforeCssClass = input => {
-        if (input)
-            input.classList.remove("MuiTimelineItem-missingOppositeContent");
-    };
+    const { render, icon, color, content } = props
+    const removeMuiCssClass = useRemoveCssClass("MuiTimelineItem-missingOppositeContent");
 
     return (
-        <TimelineItem ref={removeBeforeCssClass}>
+        <TimelineItem ref={removeMuiCssClass}>
             <TimelineSeparator>
-                {/* <TimelineDot color="primary"> */}
-                <TimelineDot className={styles.timelineDot}>
-                    {icon}
+                <TimelineDot color={color} className={styles.timelineDot}>
+                    <FontAwesomeIcon icon={icon} size="2x" color="black" />
                 </TimelineDot>
                 <TimelineConnector className={styles.customBlackLine} />
             </TimelineSeparator>
@@ -31,7 +29,7 @@ const TimeLineUnit = (props) => {
                     (({ inView, ref, entry }) => (
                         <Zoom in={inView} timeout={900}>
                             <TimelineContent ref={ref} className={styles.item}>
-                                {content}
+                                {render(content)}
                             </TimelineContent>
                         </Zoom>
                     ))}

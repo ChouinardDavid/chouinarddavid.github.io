@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './titleLabel.module.scss';
 
 const TitleLabel = (props) => {
     var { titleName, ...rest } = props;

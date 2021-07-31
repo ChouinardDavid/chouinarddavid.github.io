@@ -7,7 +7,7 @@ import styles from './openPDFButton.module.scss';
 const OpenPDFButton = (props) => {
     const { pdfFile, ...rest } = props;
 
-    const onClick = () => { window.open(pdfFile, "myWindow"); };
+    const onClick = () => { window.open(pdfFile); };
 
     return (
         <Button

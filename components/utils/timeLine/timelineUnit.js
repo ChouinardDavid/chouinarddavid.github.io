@@ -8,19 +8,32 @@ import { InView } from 'react-intersection-observer';
 import Zoom from '@material-ui/core/Zoom';
 import useRemoveCssClass from '../hooks/useRemoveCssClass';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
+const useStyles = makeStyles({
+    dotColor: {
+        backgroundColor: (props) => (props.emploi?.domaine.color || props.color)
+    }
+});
 
 
 const TimeLineUnit = (props) => {
-    const { render, icon, color, content } = props
+    const { emploi:
+        {
+            render,
+            domaine,
+            content
+        } = {}
+    } = props;
+
+    const classes = useStyles(props);
     const removeMuiCssClass = useRemoveCssClass("MuiTimelineItem-missingOppositeContent");
 
     return (
         <TimelineItem ref={removeMuiCssClass}>
             <TimelineSeparator>
-                <TimelineDot color={color} className={styles.timelineDot}>
-                    <FontAwesomeIcon icon={icon} size="2x" color="black" />
+                <TimelineDot className={`${styles.timelineDot} ${classes.dotColor}`}>
+                    <FontAwesomeIcon icon={domaine?.icon || props.icon} size="2x" color="black" />
                 </TimelineDot>
                 <TimelineConnector className={styles.customBlackLine} />
             </TimelineSeparator>
@@ -39,3 +52,5 @@ const TimeLineUnit = (props) => {
 };
 
 export default TimeLineUnit;
+
+

@@ -1,7 +1,7 @@
-import { faLeaf, faMicroscope, faGolfBall, faTv, faBook, faHandSpock, faChessKnight, faHamburger, faFlask, faHockeyPuck, faRobot, faYinYang, faCode, faDna, faGraduationCap, faLaptopCode, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
-// import { domaines, contentType } from '../sections/career/content/domaines';
+import { faLeaf, faMicroscope, faGolfBall, faTv, faBook, faHandSpock, faChessKnight, faHamburger, faFlask, faHockeyPuck, faRobot, faYinYang } from '@fortawesome/free-solid-svg-icons'
 import Job from '../components/sections/career/content/job';
 import BackToSchool from '../components/sections/career/content/backToSchool';
+import { domaines } from './domaines';
 
 
 
@@ -144,8 +144,7 @@ export const parcours_text = {
         [
             {
                 render: (content) => { return (<Job content={content} />) },
-                icon: faLaptopCode,
-                color: 'primary',
+                domaine: domaines.informatique,
                 content: {
                     employeur: 'CHU de Québec, Québec',
                     poste: 'Technicien en informatique (développeur)',
@@ -167,8 +166,7 @@ export const parcours_text = {
             },
             {
                 render: (content) => { return (<Job content={content} />) },
-                icon: faLaptopCode,
-                color: 'primary',
+                domaine: domaines.informatique,
                 content: {
                     employeur: 'Industrielle Alliance, Québec',
                     poste: 'Développeur',
@@ -188,7 +186,7 @@ export const parcours_text = {
             },
             {
                 render: (content) => { return (<BackToSchool content={content} />) },
-                icon: faGraduationCap,
+                domaine: domaines.backToSchool,
                 content: {
                     title: 'Retour à l\'école',
                     dates: 'févr. 2016 - déc. 2018'
@@ -196,8 +194,7 @@ export const parcours_text = {
             },
             {
                 render: (content) => { return (<Job content={content} />) },
-                icon: faDna,
-                color: 'secondary',
+                domaine: domaines.biologie,
                 content: {
                     employeur: 'GSK, Québec',
                     poste: 'Technicien de production',
@@ -210,8 +207,7 @@ export const parcours_text = {
             },
             {
                 render: (content) => { return (<Job content={content} />) },
-                icon: faDna,
-                color: 'secondary',
+                domaine: domaines.biologie,
                 content: {
                     employeur: 'BD Diagnostics, Québec',
                     poste: 'Technicien au contrôle de la qualité',
@@ -224,8 +220,7 @@ export const parcours_text = {
             },
             {
                 render: (content) => { return (<Job content={content} />) },
-                icon: faDna,
-                color: 'secondary',
+                domaine: domaines.biologie,
                 content: {
                     employeur: 'Feldan, Québec',
                     poste: 'Technicien de laboratoire',

@@ -4,6 +4,8 @@ import styles from './career.module.scss';
 import Timeline from '@material-ui/lab/Timeline';
 import TimeLineUnit from '../../utils/timeLine/TimeLineUnit';
 
+
+
 const Career = (props) => {
     const { labels, ...rest } = props;
 
@@ -14,16 +16,14 @@ const Career = (props) => {
                     return (
                         <TimeLineUnit
                             key={index}
-                            icon={emploi.icon}
-                            color={emploi.color}
-                            render={emploi.render}
-                            content={emploi.content}
+                            emploi={emploi}
                         />
                     )
                 })}
                 <TimeLineUnit
                     icon={faRocket}
-                    color="primary"
+                // color="#e6ed15"
+                // color="white"
                 />
             </Timeline>
         </SectionForm>

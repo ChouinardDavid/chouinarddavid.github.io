@@ -9,9 +9,7 @@ const BackToSchool = (props) => {
 
     return (
         <Paper elevation={3} className={styles.backToSchool}>
-            <Link href="#education">
-                <a><h2 className={styles.poste}>{content.title}</h2></a>
-            </Link>
+            <h2 className={styles.poste}>{content.title}</h2>
             <h3 className={styles.dates}>{content.dates}</h3>
         </Paper>
     );

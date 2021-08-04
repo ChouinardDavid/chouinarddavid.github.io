@@ -151,7 +151,7 @@ export const parcours_text = {
                     dateDebut: 'août 2019',
                     dateFin: 'auj.',
                     description:
-                        `En tant que développeur fullstack, je participe au développement de l'application <a href="https://www.dcicristalnet.com/">Cristal-Net</a> au sein d'une équipe agile. 
+                        `En tant que développeur fullstack, je participe au développement de l'application <a class="specialLinkEffect2" href="https://www.dcicristalnet.com/">Cristal-Net</a> au sein d'une équipe agile. 
                     Celle-ci permet au personnel soigant de gérer les données relatives aux visites des patients dans les hopitaux.`,
                     chips:
                         [
@@ -188,7 +188,7 @@ export const parcours_text = {
                 render: (content) => { return (<BackToSchool content={content} />) },
                 domaine: domaines.backToSchool,
                 content: {
-                    title: 'Retour à l\'école',
+                    title: 'Retour à l\'école (Technique de l’informatique)',
                     dates: 'févr. 2016 - déc. 2018'
                 }
             },
@@ -240,16 +240,19 @@ export const education_text = {
     courses: [
         {
             title: 'DEC en technique de l’informatique',
+            domaine: domaines.informatique,
             school: 'Cégep de Sainte-Foy, Québec',
             year: '2018',
         },
         {
             title: 'Certificat en biotechnologie',
+            domaine: domaines.biologie,
             school: 'Université Laval, Québec ',
             year: '2012',
         },
         {
             title: 'DEC en technique de bioécologie',
+            domaine: domaines.biologie,
             school: 'Cégep Saint-Laurent, Montréal',
             year: '2010',
         }
@@ -261,7 +264,7 @@ export const certfications_text = {
     title: sections.certification.name,
     certifications: [
         {
-            titre: 'Microsoft Certified: Azure Fundamentals',
+            title: 'Microsoft Certified: Azure Fundamentals – 2021',
             image: '/azure-fundamentals.png',
             link: 'https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals'
         }
@@ -273,10 +276,10 @@ export const projects_text = {
     title: sections.projects.name,
     projects: [
         {
-            title: "Mon CV web",
+            title: "Ma page web",
             imageLink: "/photoPerso.png",
-            description: `Mon premier projet personnel! Il m'a permis de mettre en pratique React et d'acquérir plusieurs compétences en programmation front-end.
-            Le design reste simpliste, peut-être que ce sera une amélioration à venir!`,
+            description: `Ma page web personnelle, sur laquelle vous êtes en ce moment, me permet de me présenter
+            `,
             codeSourceLink: "https://github.com/ChouinardDavid/chouinarddavid.github.io",
             chips: [
                 "React",

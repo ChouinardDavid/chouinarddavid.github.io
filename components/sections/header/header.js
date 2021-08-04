@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './header.module.scss';
-import OpenPDFButton from '../../utils/openPDFButton/openPDFButton';
+import Button from '@material-ui/core/Button';
 
 
 const Header = (props) => {
     const { labels, ...rest } = props;
+    const onClick = () => { window.open("/cv_David_Chouinard_Lavoie.pdf"); };
 
     return (
         <div className={styles.content} id={labels.id} {...rest}>
@@ -13,10 +14,19 @@ const Header = (props) => {
                 <h1>David Chouinard-Lavoie</h1>
                 <h1>Developpeur Web Full-Stack</h1>
                 <h1>Québec, Qc</h1>
-                <div>
-                    <h3>Consulter mon CV détaillé</h3>
-                    <OpenPDFButton pdfFile="/cv_David_Chouinard_Lavoie.pdf">
-                    </OpenPDFButton>
+                <div className={styles.consultCV}>
+                    <span className={styles.consultCV_text}>Consulter mon CV détaillé</span>
+                    <img className={styles.consultCV_img} src="./arrow.png"></img>
+                    <div className={styles.consultCV_button}>
+                        <Button
+                            size='large'
+                            variant="contained"
+                            onClick={onClick}
+                            {...rest}
+                        >
+                            Ouvrir
+                        </Button >
+                    </div>
                 </div>
             </div>
         </div>

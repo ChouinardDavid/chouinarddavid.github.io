@@ -25,8 +25,8 @@ const Certification = (props) => {
                             height={500} /> */}
 
                                 <img className={styles.image} src={certification.image} />
-                                <a href={certification.link}>
-                                    <h2>Microsoft Certified: Azure Fundamentals</h2>
+                                <a className="specialLinkEffect2" href={certification.link}>
+                                    <h2 className={styles.title}>{certification.title}</h2>
                                 </a>
                             </Paper>
                         )

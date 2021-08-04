@@ -26,5 +26,27 @@
 
     .description{
         justify-self: start;
+
+        .consultCV{
+            margin-top: 90px;
+            display: flex;
+            align-items: center;
+
+            .consultCV_text{
+                font-size: 19px;
+                font-weight: bold;
+            }
+
+            .consultCV_img{
+                margin: 0px 25px 30px;
+                width: 125px;
+                transform: rotate(-10deg);
+            }
+
+            // .consultCV_button{
+            //     width: 150px;
+            //     max-height: 50px;
+            // }
+        }
     }
 }

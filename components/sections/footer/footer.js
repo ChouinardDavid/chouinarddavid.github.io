@@ -20,7 +20,7 @@ const Footer = (props) => {
                 {
                     Object.keys(labels.sections).map((key, index) => {
                         return (
-                            <a id={key} key={key} href={'#' + labels.sections[key].id} className={styles.link} >
+                            <a id={key} key={key} href={'#' + labels.sections[key].id} className={`${styles.link} specialLinkEffect`} >
                                 {labels.sections[key].name}
                             </a>
                         )

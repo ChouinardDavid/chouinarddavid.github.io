@@ -1,4 +1,4 @@
-import { faDna, faGraduationCap, faLaptopCode } from '@fortawesome/free-solid-svg-icons'
+import { faDna, faVial, faGraduationCap, faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 
 
 export const domaines = {
@@ -8,7 +8,7 @@ export const domaines = {
     },
     biologie: {
         color: "#e85d5d",
-        icon: faDna,
+        icon: faVial,
     },
     backToSchool: {
         color: "#17a2b8",

@@ -11,3 +11,56 @@ body {
 * {
 	box-sizing: border-box;
 }
+
+
+
+:root {
+    --mainColor: #ff9800;
+  }
+  
+  .specialLinkEffect {
+    background:
+       linear-gradient(
+         to right,
+         var(--mainColor) 0%,
+         var(--mainColor) 5px,
+         transparent 5px
+       );
+    background-repeat: repeat-x;
+    background-size: 100%;
+    color: #000;
+    padding-left: 10px;
+    text-decoration: none;
+  }
+  
+  .specialLinkEffect:hover {
+    background:
+       linear-gradient(
+         to right,
+         var(--mainColor) 0%,
+         var(--mainColor) 5px,
+         transparent
+       );
+  }
+
+
+
+
+
+  .specialLinkEffect2 {
+    background:
+       linear-gradient(
+         to bottom, var(--mainColor) 0%,
+         var(--mainColor) 100%
+       );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size .2s;
+  }
+  
+  .specialLinkEffect2:hover {
+    background-size: 4px 50px;
+  }

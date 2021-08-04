@@ -14,9 +14,17 @@
             text-align: center;
             height: 100%;
 
-            .title{
+            .titleContainer{
                 flex: 1 1 auto;    
+                display: grid;
+                grid-template-columns: 40px auto 40px;
+                justify-items: center;
+
+                .domaineIcon{
+                    margin: 10px 7px 0px 0px;
+                } 
             }
         }
     }
 }
+

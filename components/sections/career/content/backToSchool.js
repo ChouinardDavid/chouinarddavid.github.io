@@ -1,11 +1,8 @@
-import styles from './../career.module.scss';
 import Paper from '@material-ui/core/Paper';
-import Link from 'next/link'
-
-
+import styles from './../career.module.scss';
 
 const BackToSchool = (props) => {
-    const { content } = props
+    const { content } = props;
 
     return (
         <Paper elevation={3} className={styles.backToSchool}>

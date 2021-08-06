@@ -1,37 +1,33 @@
-
-
-.timeline{
+.timeline {
     margin-top: 0px;
     padding: 0px !important;
 }
 
-.job{
+.job {
     padding: 20px;
 
-    .poste{
+    .poste {
         margin: 0px 0px 10px 0px;
     }
-    .dates{
+    .dates {
         margin: 0px 0px 10px 0px;
     }
-    .description{
+    .employeur {
+        margin: 0px 0px 10px 0px;
+    }
+    .description {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    .chip {
+        margin: 10px 0px 0px 10px;
+        background-color: #e6e6e6 !important;
+    }
 }
 
-.backToSchool{
+.backToSchool {
     padding: 20px;
     background-color: #e6e6e6 !important;
     display: flex;
     justify-content: space-between;
-}
-
-.employeur{
-    margin: 0px 0px 10px 0px;
-}
-
-.chip{
-    margin: 10px 0px 0px 10px;
-    background-color: #e6e6e6 !important;
 }

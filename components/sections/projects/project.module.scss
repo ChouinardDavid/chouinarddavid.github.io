@@ -1,6 +1,4 @@
-
-
-.card{
+.projectPaper {
     padding: 20px;
     display: grid;
     // grid-template-columns: 300px auto;
@@ -9,20 +7,20 @@
     grid-template-rows: 75% 25%;
     gap: 10px;
     place-items: start start;
-    // grid-template-areas: 
+    // grid-template-areas:
     // "picture description"
     // "chips description";
     grid-auto-flow: column;
 
-    .picture{
-        grid-area: "picture";
+    .image {
+        grid-area: 'picture';
         width: 220px;
         height: auto;
     }
 
-    .chipsContent{
-        grid-area: "chips";
-        .chip{
+    .chipsContainer {
+        grid-area: 'chips';
+        .chip {
             margin-right: 10px;
             // margin-top: 10px;
             // background-color: #d5dee0 !important;
@@ -30,9 +28,7 @@
         }
     }
 
-    .description{
-        grid-area: "description";
-
+    .description {
+        grid-area: 'description';
     }
 }
-

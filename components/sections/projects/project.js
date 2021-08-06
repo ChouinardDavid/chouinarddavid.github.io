@@ -1,47 +1,56 @@
-import React from 'react';
+import Button from '@material-ui/core/Button';
+import Chip from '@material-ui/core/Chip';
+import Paper from '@material-ui/core/Paper';
 import SectionForm from '../../utils/sectionForm/sectionsForm';
 import styles from './Project.module.scss';
-import Paper from '@material-ui/core/Paper';
-import Chip from '@material-ui/core/Chip';
-import Button from '@material-ui/core/Button';
 
-
-
-const Projects = (props) => {
-    const { labels, ...rest } = props;
+const Project = (props) => {
+    const { labels } = props;
 
     return (
-        <SectionForm id={labels.id} title={labels.title} {...rest}>
-
-            {labels.projects.map((projet, index) => {
-
+        <SectionForm id={labels.id} title={labels.title}>
+            {labels.projects.map((project) => {
                 return (
-                    <Paper key={projet.title} className={styles.card} elevation={3}>
+                    <Paper
+                        key={project.title}
+                        className={styles.projectPaper}
+                        elevation={3}>
                         <div>
-                            <img className={styles.picture} src='/photoPerso.png' />
+                            <img
+                                className={styles.image}
+                                src={project.imageSource}
+                            />
                         </div>
 
-                        <div className={styles.chipsContent}>
-                            {projet.chips && projet.chips.map((chip, index) => {
-                                return <Chip key={chip} label={chip} className={styles.chip}></Chip>
-                            })}
+                        <div className={styles.chipsContainer}>
+                            {project.chips &&
+                                project.chips.map((chip) => {
+                                    return (
+                                        <Chip
+                                            key={chip}
+                                            label={chip}
+                                            className={styles.chip}></Chip>
+                                    );
+                                })}
                         </div>
 
                         <div>
-                            <h1>{projet.title}</h1>
-                            <h3>{projet.description}</h3>
+                            <h1>{project.title}</h1>
+                            <h3>{project.description}</h3>
                         </div>
 
                         <div>
-                            <Button variant="contained" href={projet.codeSourceLink}>
+                            <Button
+                                variant='contained'
+                                href={project.codeSourceLink}>
                                 Code source
                             </Button>
                         </div>
                     </Paper>
-                )
+                );
             })}
-        </SectionForm >
+        </SectionForm>
     );
 };
 
-export default Projects;
+export default Project;

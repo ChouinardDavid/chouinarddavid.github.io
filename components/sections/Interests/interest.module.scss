@@ -1,24 +1,20 @@
-
-
-.interestGroup {
+.interestsContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, 260px);
     gap: 20px;
     justify-content: center;
 
-    .interestPaper{
-        .interest{
-            display: flex;
-            align-items: center;
+    .interest {
+        display: flex;
+        align-items: center;
 
-            .icon{
-                margin: 20px 0px 20px 30px;
-            }
+        .icon {
+            margin: 20px 0px 20px 30px;
+        }
 
-            .title{
-                flex: 1 1 auto;
-                text-align: center;
-            }
+        .title {
+            flex: 1 1 auto;
+            text-align: center;
         }
     }
 }

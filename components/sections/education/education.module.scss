@@ -1,30 +1,24 @@
-
-
-
-.groupCourses{
+.diplomasContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
     gap: 20px;
     justify-content: center;
 
-    .coursePaper{
-        .course{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            height: 100%;
+    .diploma {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
 
-            .titleContainer{
-                flex: 1 1 auto;    
-                display: grid;
-                grid-template-columns: 40px auto 40px;
-                justify-items: center;
+        .titleContainer {
+            flex: 1 1 auto;
+            display: grid;
+            grid-template-columns: 40px auto 40px;
+            justify-items: center;
 
-                .domaineIcon{
-                    margin: 10px 7px 0px 0px;
-                } 
+            .domaineIcon {
+                margin: 10px 7px 0px 0px;
             }
         }
     }
 }
-

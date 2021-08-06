@@ -1,6 +1,4 @@
-
-
-.content{
+.container {
     height: 85vh;
     width: 100%;
     margin-bottom: 75px;
@@ -17,36 +15,30 @@
     justify-items: center;
     align-items: center;
 
-
-    .myImage {
+    .image {
         width: 60%;
         height: auto;
         border-radius: 10%;
     }
 
-    .description{
+    .description {
         justify-self: start;
 
-        .consultCV{
+        .cv {
             margin-top: 90px;
             display: flex;
             align-items: center;
 
-            .consultCV_text{
+            .cv_text {
                 font-size: 19px;
                 font-weight: bold;
             }
 
-            .consultCV_img{
+            .cv_img {
                 margin: 0px 25px 30px;
                 width: 125px;
                 transform: rotate(-10deg);
             }
-
-            // .consultCV_button{
-            //     width: 150px;
-            //     max-height: 50px;
-            // }
         }
     }
 }

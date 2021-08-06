@@ -1,6 +1,4 @@
-
-
-.content{
+.container {
     height: 300px;
     width: 100%;
     background-color: #a6c5ce;
@@ -15,7 +13,7 @@
         border-radius: 50%;
     }
 
-    .contact{
+    .contact {
         display: flex;
         align-items: center;
 
@@ -23,17 +21,14 @@
             margin: 5px;
         }
 
-
-
-        .email{
-            // display: inline-block;
+        .email {
             font-weight: bold;
             font-size: 1.5em;
             margin-left: 25px;
         }
     }
 
-    .linksContent{
+    .linksContent {
         // display: flex;
         //flex-direction: column;
         //justify-content: space-around;
@@ -46,7 +41,7 @@
         // justify-items: center;
         // max-width: 400px;
 
-        .link{
+        .link {
             // flex: 0 0 10px;
             // margin: 10px;
         }

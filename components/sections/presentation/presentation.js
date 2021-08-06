@@ -1,14 +1,13 @@
 import React from 'react';
-import styles from './presentation.module.scss';
-import SectionForm from '../../utils/sectionForm/sectionsForm';
 import Paper from '@material-ui/core/Paper';
+import SectionForm from '../../utils/sectionForm/sectionsForm';
+import styles from './presentation.module.scss';
 
 const Presentation = (props) => {
-    const { labels, ...rest } = props;
+    const { labels } = props;
     return (
-        <SectionForm id={labels.id} title={labels.title} {...rest}>
+        <SectionForm id={labels.id} title={labels.title}>
             <Paper elevation={3} className={styles.presentation}>
-                {/* <p> {labels.description} </p> */}
                 <p dangerouslySetInnerHTML={{ __html: labels.description }} />
             </Paper>
         </SectionForm>

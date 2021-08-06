@@ -1,28 +1,12 @@
-
-// @use '../styles/variables';
-
-
-$bioTechBaseColor: rgb(33, 150, 243);
-$infoBaseColor:  rgb(60,179,113);
-
-
-// .customBlackLine{
-//     background-color: #000000;
-// }
-
-
-.item{
+.item {
     margin-bottom: 75px;
 }
 
-
-.timelineDot{
+.timelineDot {
     height: 60px;
     width: 60px;
 
-    & > *:first-child{
+    & > *:first-child {
         margin: auto;
     }
-
-
 }

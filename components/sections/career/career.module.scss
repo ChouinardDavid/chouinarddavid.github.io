@@ -3,15 +3,25 @@
     padding: 0px !important;
 }
 
-.job {
+.job,
+.backToSchool {
     padding: 20px;
 
-    .poste {
-        margin: 0px 0px 10px 0px;
+    .date {
+        display: flex;
+
+        .poste {
+            margin: 0px 0px 10px 0px;
+        }
+        .dates {
+            flex: 1 0 auto;
+            text-align: right;
+            margin: 0px 0px 10px 30px;
+        }
     }
-    .dates {
-        margin: 0px 0px 10px 0px;
-    }
+}
+
+.job {
     .employeur {
         margin: 0px 0px 10px 0px;
     }
@@ -26,8 +36,24 @@
 }
 
 .backToSchool {
-    padding: 20px;
     background-color: #e6e6e6 !important;
-    display: flex;
-    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+    .job,
+    .backToSchool {
+        .date {
+            display: flex;
+            flex-direction: column;
+
+            .poste {
+                order: 2;
+            }
+            .dates {
+                text-align: left;
+                order: 1;
+                margin-left: 0px;
+            }
+        }
+    }
 }

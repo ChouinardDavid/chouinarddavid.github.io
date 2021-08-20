@@ -1,25 +1,25 @@
 import Chip from '@material-ui/core/Chip';
 import Paper from '@material-ui/core/Paper';
-import { makeStyles } from '@material-ui/core/styles';
+// import { makeStyles } from '@material-ui/core/styles';
 import styles from './../career.module.scss';
 
-const useStyles = makeStyles((theme) => ({
-    date: {
-        display: 'flex',
-        justifyContent: 'space-between',
-        [theme.breakpoints.down(600)]: {
-            flexDirection: 'column',
-        },
-    },
-}));
+// const useStyles = makeStyles((theme) => ({
+//     date: {
+//         display: 'flex',
+//         justifyContent: 'space-between',
+//         [theme.breakpoints.down(600)]: {
+//             flexDirection: 'column',
+//         },
+//     },
+// }));
 
 const Job = (props) => {
     const { content } = props;
-    const classes = useStyles();
+    // const classes = useStyles();
 
     return (
         <Paper elevation={3} className={styles.job}>
-            <div className={classes.date}>
+            <div className={styles.date}>
                 <h2 className={styles.poste}>{content.poste}</h2>
                 <h3 className={styles.dates}>
                     {content.dateDebut}

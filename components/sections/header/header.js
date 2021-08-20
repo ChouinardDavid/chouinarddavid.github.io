@@ -11,9 +11,11 @@ const Header = (props) => {
         <div className={styles.container} id={labels.id}>
             <img className={styles.image} src='/toonPerso2.jpg' />
             <div className={styles.description}>
-                <h1>David Chouinard-Lavoie</h1>
-                <h1>Developpeur Web Full-Stack</h1>
-                <h1>Québec, Qc</h1>
+                <div className={styles.name}>
+                    <h1>David Chouinard-Lavoie</h1>
+                    <h1>Developpeur Web Full-Stack</h1>
+                    <h1>Québec, Qc</h1>
+                </div>
                 <div className={styles.cv}>
                     <span className={styles.cv_text}>
                         Consulter mon CV détaillé

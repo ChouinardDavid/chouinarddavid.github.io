@@ -151,8 +151,9 @@ export const career_text = {
             domaine: domaines.informatique,
             content: {
                 employeur: 'CHU de Québec, Québec',
-                poste: 'Technicien en informatique (développeur)',
-                dateDebut: 'août 2019',
+                poste: 'Technicien informatique (développeur)',
+                // dateDebut: 'août 2019',
+                dateDebut: '2019',
                 dateFin: 'auj.',
                 description: `En tant que développeur fullstack, je participe au développement de l'application <a class="specialLinkEffect2" href="https://www.dcicristalnet.com/">Cristal-Net</a> au sein d'une équipe agile. 
                     Celle-ci permet au personnel soigant de gérer les données relatives aux visites des patients dans les hopitaux.`,
@@ -174,8 +175,10 @@ export const career_text = {
             content: {
                 employeur: 'Industrielle Alliance, Québec',
                 poste: 'Développeur',
-                dateDebut: ' sept. 2018',
-                dateFin: ' août 2019',
+                // dateDebut: 'sept. 2018',
+                // dateFin: 'août 2019',
+                dateDebut: '2018',
+                dateFin: '2019',
                 description: `Assurer un support aux utilisateurs des applications corporatives dans le département de la comptabilité et fiscalité. 
                     Cela consistait à corriger les anomalies, mais aussi à participer aux évolutions des systèmes utilisés.`,
                 chips: [
@@ -193,7 +196,8 @@ export const career_text = {
             domaine: domaines.backToSchool,
             content: {
                 title: "Retour à l'école (Technique de l’informatique)",
-                dates: 'févr. 2016 - déc. 2018',
+                // dates: 'févr. 2016 - déc. 2018',
+                dates: '2016 - 2018',
             },
         },
         {
@@ -204,8 +208,10 @@ export const career_text = {
             content: {
                 employeur: 'GSK, Québec',
                 poste: 'Technicien de production',
-                dateDebut: 'nov. 2014',
-                dateFin: 'févr. 2017',
+                // dateDebut: 'nov. 2014',
+                // dateFin: 'févr. 2017',
+                dateDebut: '2014',
+                dateFin: '2017',
                 description: `Participer à la production du vaccin *anti-grippal*, mon rôle était d'opérer les systèmes de remplissage en fiole ou en flacon.
                     Je contribuais aussi activement à la formation des nouveaux employés.`,
             },
@@ -218,8 +224,9 @@ export const career_text = {
             content: {
                 employeur: 'BD Diagnostics, Québec',
                 poste: 'Technicien au contrôle de la qualité',
-                dateDebut: 'janv. 2014',
-                dateFin: 'oct. 2014',
+                // dateDebut: 'janv. 2014',
+                // dateFin: 'oct. 2014',
+                dateDebut: '2014',
                 description: `Effectuer les analyses de laboratoire permettant de valider la qualité du produit à toutes les étapes de sa préparation.
                     Ces données étaient ensuite compilées et présentées à l'assurance qualité sous forme de rapport.`,
             },
@@ -232,8 +239,10 @@ export const career_text = {
             content: {
                 employeur: 'Feldan, Québec',
                 poste: 'Technicien de laboratoire',
-                dateDebut: 'mai 2012',
-                dateFin: 'janv. 2014',
+                // dateDebut: 'mai 2012',
+                // dateFin: 'janv. 2014',
+                dateDebut: '2012',
+                dateFin: '2014',
                 description: `Mon rôle dans cette entreprise était plutôt diversifié. Principalement, je participais aux activités de production et aux projets de R&D. 
                     Mais j'assurais aussi l'approvisionnement des matières premières ainsi que la livraison des commandes aux clients.`,
             },

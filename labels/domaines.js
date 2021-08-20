@@ -1,7 +1,7 @@
 import {
+    faLaptopCode,
     faVial,
     faGraduationCap,
-    faLaptopCode,
 } from '@fortawesome/free-solid-svg-icons';
 
 export const domaines = {

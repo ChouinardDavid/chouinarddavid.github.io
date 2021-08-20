@@ -9,9 +9,7 @@ const SectionForm = (props) => {
                 <TitleLabel titleName={title} />
             </div>
 
-            <div className={styles.content}>
-                {children}
-            </div>
+            <div className={styles.content}>{children}</div>
         </div>
     );
 };

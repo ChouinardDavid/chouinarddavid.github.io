@@ -157,14 +157,7 @@ export const career_text = {
                 dateFin: 'auj.',
                 description: `En tant que développeur fullstack, je participe au développement de l'application <a class="specialLinkEffect2" href="https://www.dcicristalnet.com/">Cristal-Net</a> au sein d'une équipe agile. 
                     Celle-ci permet au personnel soigant de gérer les données relatives aux visites des patients dans les hopitaux.`,
-                chips: [
-                    '.NET (C#/vb.net)',
-                    'Javascript',
-                    'SQL',
-                    'JQuery',
-                    'Kendo',
-                    'Azure DevOps',
-                ],
+                chips: ['.NET', 'Javascript', 'SQL', 'DevOps', 'Scrum master'],
             },
         },
         {
@@ -182,10 +175,11 @@ export const career_text = {
                 description: `Assurer un support aux utilisateurs des applications corporatives dans le département de la comptabilité et fiscalité. 
                     Cela consistait à corriger les anomalies, mais aussi à participer aux évolutions des systèmes utilisés.`,
                 chips: [
-                    '.NET (C#)',
+                    '.NET',
                     'Javascript',
                     'SQL',
-                    'Azure DevOps (Release manager)',
+                    'DevOps',
+                    'Release manager',
                 ],
             },
         },

@@ -16,7 +16,7 @@
         .dates {
             flex: 1 0 auto;
             text-align: right;
-            margin: 0px 0px 10px 30px;
+            margin: 5px 0px 10px 30px;
         }
     }
 }
@@ -52,7 +52,8 @@
             .dates {
                 text-align: left;
                 order: 1;
-                margin-left: 0px;
+                margin: 0px;
+                margin-bottom: 10px;
             }
         }
     }

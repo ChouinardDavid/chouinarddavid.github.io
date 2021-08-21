@@ -27,8 +27,8 @@ const sections = {
         name: 'Compétences',
     },
     parcours: {
-        id: 'parcours',
-        name: 'Parcours de Carrière',
+        id: 'carriere',
+        name: 'Carrière',
     },
     education: {
         id: 'education',
@@ -56,6 +56,11 @@ export const footer_text = {
     id: 'footer',
     sections: sections,
     email: 'chouinard.dc@gmail.com',
+    image: '/photoPerso3.jpg',
+    socialLinks: [
+        'https://www.linkedin.com/in/david-chouinard/',
+        'https://github.com/ChouinardDavid',
+    ],
 };
 
 export const presentation_text = {
@@ -157,7 +162,13 @@ export const career_text = {
                 dateFin: 'auj.',
                 description: `En tant que développeur fullstack, je participe au développement de l'application <a class="specialLinkEffect2" href="https://www.dcicristalnet.com/">Cristal-Net</a> au sein d'une équipe agile. 
                     Celle-ci permet au personnel soigant de gérer les données relatives aux visites des patients dans les hopitaux.`,
-                chips: ['.NET', 'Javascript', 'SQL', 'DevOps', 'Scrum master'],
+                chips: [
+                    '.NET', //
+                    'Javascript',
+                    'SQL',
+                    'DevOps',
+                    'Scrum master',
+                ],
             },
         },
         {

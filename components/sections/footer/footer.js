@@ -20,7 +20,7 @@ const Footer = (props) => {
                         );
                     })}
                 </div>
-                <div>
+                <div className={styles.emailContent}>
                     <span className={styles.email}>{labels.email}</span>
                     <CopyToClipboardIcon
                         textToCopy={labels.email}></CopyToClipboardIcon>

@@ -17,16 +17,23 @@ const Certification = (props) => {
                             className={styles.image}
                             src={certification.image}
                         />
-                        <a
-                            className='specialLinkEffect2'
-                            href={certification.link}>
-                            <h2 className={styles.title}>
-                                {certification.title}
-                            </h2>
-                        </a>
-                        <h2 className={styles.certificationYear}>
-                            {' – ' + certification.year}
-                        </h2>
+                        <div className={styles.linkContent}>
+                            <a
+                                className={`${styles.link} specialLinkEffect2`}
+                                href={certification.link}>
+                                <span className={styles.title}>
+                                    {certification.title}
+                                </span>
+                            </a>
+                        </div>
+                        <span className={styles.certificationYear}>
+                            <span className={styles.hyphen}>
+                                &nbsp;&nbsp;{'–'}&nbsp;&nbsp;
+                            </span>
+                            <span className={styles.year}>
+                                {certification.year}
+                            </span>
+                        </span>
                     </Paper>
                 );
             })}

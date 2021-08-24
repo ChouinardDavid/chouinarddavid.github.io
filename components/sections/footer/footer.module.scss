@@ -19,14 +19,22 @@
         display: flex;
         align-items: center;
 
+        .socialIcons {
+            white-space: nowrap;
+        }
+
         .icon {
             margin: 5px;
         }
 
-        .email {
-            font-weight: bold;
-            font-size: 1.5em;
-            margin-left: 25px;
+        .emailContent {
+            white-space: nowrap;
+
+            .email {
+                font-weight: bold;
+                font-size: 1.5em;
+                margin-left: 25px;
+            }
         }
     }
 
@@ -87,9 +95,11 @@
                 align-self: flex-start;
             }
 
-            .email {
-                margin-left: 0px;
-                order: 1;
+            .emailContent {
+                .email {
+                    margin-left: 0px;
+                    order: 1;
+                }
             }
         }
 

@@ -301,7 +301,7 @@ export const certfications_text = {
     title: sections.certification.name,
     certifications: [
         {
-            title: 'Microsoft Certified: Azure Fundamentals',
+            title: 'Microsoft Azure Fundamentals',
             year: 2021,
             image: '/azure-fundamentals.png',
             link: 'https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals',

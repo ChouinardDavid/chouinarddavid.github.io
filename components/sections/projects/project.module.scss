@@ -1,34 +1,86 @@
 .projectPaper {
     padding: 20px;
     display: grid;
-    // grid-template-columns: 300px auto;
-    // grid-template-rows: 160px auto;
-    grid-template-columns: 25% 75%;
-    grid-template-rows: 75% 25%;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
     gap: 10px;
-    place-items: start start;
-    // grid-template-areas:
-    // "picture description"
-    // "chips description";
-    grid-auto-flow: column;
+    place-items: center;
+    grid-template-areas:
+        'image text text'
+        'image chips button';
 
     .image {
-        grid-area: 'picture';
-        width: 220px;
+        width: 230px;
         height: auto;
+        grid-area: image;
+        align-self: start;
+        border-radius: 10%;
+        margin-right: 15px;
     }
 
     .chipsContainer {
-        grid-area: 'chips';
+        grid-area: chips;
+        margin-top: 10px;
+        justify-self: start;
+
         .chip {
             margin-right: 10px;
-            // margin-top: 10px;
-            // background-color: #d5dee0 !important;
             background-color: #e6e6e6 !important;
         }
     }
 
-    .description {
-        grid-area: 'description';
+    .textContainer {
+        grid-area: text;
+        place-self: center start;
+
+        .title {
+            margin-top: 0px;
+        }
+
+        .description {
+            font-weight: normal;
+        }
+    }
+
+    .buttonContainer {
+        grid-area: button;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .projectPaper {
+        grid-template-areas:
+            'image text  text'
+            'chips . button';
+        .image {
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .projectPaper {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+
+        .image {
+            place-self: auto;
+            margin: 0px;
+        }
+
+        .textContainer {
+            place-self: auto;
+            margin-top: 30px;
+        }
+
+        .chipsContainer {
+            align-self: flex-start;
+        }
+
+        .buttonContainer {
+            align-self: flex-end;
+            margin-top: 30px;
+        }
     }
 }

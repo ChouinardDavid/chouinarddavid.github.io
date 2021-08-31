@@ -15,13 +15,16 @@ const Project = (props) => {
                         key={project.title}
                         className={styles.projectPaper}
                         elevation={3}>
-                        <div>
-                            <img
-                                className={styles.image}
-                                src={project.imageSource}
-                            />
+                        <img
+                            className={styles.image}
+                            src={project.imageSource}
+                        />
+                        <div className={styles.textContainer}>
+                            <h2 className={styles.title}>{project.title}</h2>
+                            <span className={styles.description}>
+                                {project.description}
+                            </span>
                         </div>
-
                         <div className={styles.chipsContainer}>
                             {project.chips &&
                                 project.chips.map((chip) => {
@@ -33,13 +36,7 @@ const Project = (props) => {
                                     );
                                 })}
                         </div>
-
-                        <div>
-                            <h1>{project.title}</h1>
-                            <h3>{project.description}</h3>
-                        </div>
-
-                        <div>
+                        <div className={styles.buttonContainer}>
                             <Button
                                 variant='contained'
                                 href={project.codeSourceLink}>

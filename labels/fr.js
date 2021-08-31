@@ -286,9 +286,8 @@ export const projects_text = {
     projects: [
         {
             title: 'Ma page web',
-            imageSource: '/photoPerso.png',
-            description: `Ma page web personnelle, sur laquelle vous êtes en ce moment, me permet de me présenter
-            `,
+            imageSource: '/toonPerso2.jpg',
+            description: `Ma page web personnelle, sur laquelle vous êtes en ce moment, me permet de me présenter`,
             codeSourceLink:
                 'https://github.com/ChouinardDavid/chouinarddavid.github.io',
             chips: ['React', 'Next.js', 'Material-UI'],

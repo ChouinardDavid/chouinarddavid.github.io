@@ -6,3 +6,11 @@
         margin: auto;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .sectionForm {
+        .content {
+            width: 100%;
+        }
+    }
+}

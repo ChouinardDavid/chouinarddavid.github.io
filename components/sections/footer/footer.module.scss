@@ -1,5 +1,5 @@
 .container {
-    height: 300px;
+    height: 350px;
     width: 100%;
     padding: 20px;
     background-color: #a6c5ce;
@@ -44,22 +44,15 @@
         grid-template-rows: repeat(4, 1fr);
         gap: 25px 50px;
         grid-auto-flow: column;
-
-        .link {
-            white-space: nowrap;
-        }
     }
 }
 
 @media screen and (max-width: 1350px) {
     .container {
-        // height: 320px;
         grid-template-columns: 40% 60%;
         grid-template-rows: repeat(2, 1fr);
 
         .image {
-            // width: 40%;
-            // min-width: 100px;
             grid-row: 1 / span 2;
         }
 
@@ -79,16 +72,32 @@
 
 @media screen and (max-width: 768px) {
     .container {
-        height: 600px;
-        padding: 50px 20px;
+        height: 80vh;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        row-gap: 30px;
+        grid-template-rows: repeat(4, 1fr);
+
+        .contact {
+            justify-self: center;
+        }
+
+        .image {
+            width: 25%;
+        }
+
+        .linksContent {
+            justify-self: center;
+            grid-template-columns: repeat(3, minmax(min-content, 100px));
+            grid-template-rows: repeat(3, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        height: 100vh;
 
         .contact {
             flex-direction: column;
-            justify-self: center;
-            // justify-content: flex-start;
 
             .socialIcons {
                 order: 2;
@@ -97,22 +106,13 @@
 
             .emailContent {
                 .email {
-                    margin-left: 0px;
                     order: 1;
+                    margin-left: 0px;
                 }
             }
         }
-
-        .image {
-            grid-row: 1 / span 1;
-            min-width: 160px;
-        }
-
         .linksContent {
-            justify-self: center;
-            gap: 25px 35px;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            gap: 25px 25px;
         }
     }
 }

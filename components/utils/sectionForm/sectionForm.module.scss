@@ -1,6 +1,17 @@
 .sectionForm {
     margin-bottom: 75px;
 
+    .titleContainer {
+        background-color: #d5dee0;
+        border: 1px solid black;
+        border-radius: 50px;
+        margin-bottom: 25px;
+
+        .title {
+            margin-left: 50px;
+        }
+    }
+
     .content {
         width: 90%;
         margin: auto;

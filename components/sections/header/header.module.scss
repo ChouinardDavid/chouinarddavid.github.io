@@ -1,10 +1,11 @@
 .container {
-    height: 85vh;
-    width: 100%;
+    height: 75vh;
     margin-bottom: 75px;
     padding: 20px;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    // grid-template-columns: 48% 52%;
+    align-content: center;
+    column-gap: 60px;
     // background-color: #d0e1f9;
     // background-color: #92aac7;
     // background-color: #8593ae;
@@ -13,22 +14,20 @@
     // background-color: #67b4ca;
     // background-color: #88bdcc;
     background-color: #a6c5ce;
-    display: grid;
-    justify-items: center;
-    align-items: center;
 
     .image {
-        // justify-self: end;
-        width: 60%;
-        min-width: 400px;
+        justify-self: center;
+        align-self: center;
+        width: 550px;
         height: auto;
         border-radius: 10%;
-        // margin-right: 15px;
     }
 
     .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         justify-self: start;
-        margin-left: 15px;
 
         .name > h1 {
             font-size: 35px;
@@ -36,7 +35,6 @@
         }
 
         .cv {
-            margin-top: 90px;
             display: flex;
             align-items: center;
 
@@ -55,32 +53,24 @@
     }
 }
 
-@media screen and (max-width: 1378px) {
+@media screen and (max-width: 1200px) {
     .container {
+        .image {
+            min-width: 375px;
+            width: 90%;
+        }
+
         .description {
             .name > h1 {
-                font-size: 30px;
+                font-size: 3vw;
             }
-
-            .cv {
-                .cv_text {
-                    font-size: 18px;
-                }
-
-                .cv_img {
-                    width: 80px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .container {
-        .description {
             .cv {
                 flex-direction: column;
                 align-items: flex-start;
+
+                .cv_text {
+                    font-size: 18px;
+                }
 
                 .cv_img {
                     display: none;
@@ -94,47 +84,31 @@
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
     .container {
+        height: 110vh;
+        padding: 20px 5px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 20px;
+        align-content: flex-start;
+
         .image {
+            width: 65%;
             min-width: 350px;
         }
 
         .description {
-            .name > h1 {
-                font-size: 24px;
-            }
-            .cv {
-                .cv_text {
-                    // font-size: 17px;
-                }
-                .cv_img {
-                    width: 80px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        padding: 20px 5px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-
-        .image {
-            min-width: 300px;
-        }
-
-        .description {
-            display: flex;
             justify-content: flex-start;
             justify-self: center;
-            align-self: flex-start;
+            row-gap: 30px;
+
+            .name > h1 {
+                font-size: 3.8vw;
+            }
 
             .cv {
-                margin-left: 30px;
-                margin-top: 10px;
+                margin-left: 0px;
             }
         }
     }
@@ -142,42 +116,27 @@
 
 @media screen and (max-width: 600px) {
     .container {
-        height: 100vh;
-        min-height: 580px;
-        padding: 20px 5px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-
-        .image {
-            min-width: 300px;
-        }
-
         .description {
-            flex-direction: column;
-            align-items: start;
-            margin-top: 15px;
-
             .name {
                 & > h1 {
-                    font-size: 20px;
+                    font-size: 25px;
                 }
-            }
-
-            .cv {
-                margin-left: 0px;
-                margin-top: 50px;
             }
         }
     }
 }
 
-@media screen and (max-height: 630px) {
+@media screen and (max-width: 400px) {
     .container {
-        .description {
-            margin-top: 5px;
+        .image {
+            min-width: 300px;
+        }
 
-            .cv {
-                margin-top: 15px;
+        .description {
+            .name {
+                & > h1 {
+                    font-size: 21px;
+                }
             }
         }
     }

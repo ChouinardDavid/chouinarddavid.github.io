@@ -7,16 +7,17 @@
 .backToSchool {
     padding: 20px;
 
-    .date {
+    .title {
         display: flex;
+        justify-content: space-between;
 
         .poste {
-            margin: 0px 0px 10px 0px;
+            margin: 10px 0px 10px 0px;
         }
+
         .dates {
-            flex: 1 0 auto;
-            text-align: right;
-            margin: 5px 0px 10px 30px;
+            margin: 10px 0px 10px 30px;
+            white-space: nowrap;
         }
     }
 }
@@ -25,10 +26,12 @@
     .employeur {
         margin: 0px 0px 10px 0px;
     }
+
     .description {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+
     .chip {
         margin: 10px 0px 0px 10px;
         background-color: #e6e6e6 !important;
@@ -42,18 +45,19 @@
 @media screen and (max-width: 600px) {
     .job,
     .backToSchool {
-        .date {
+        .title {
             display: flex;
             flex-direction: column;
 
             .poste {
                 order: 2;
             }
+
             .dates {
+                font-size: 1.25em;
                 text-align: left;
                 order: 1;
                 margin: 0px;
-                margin-bottom: 10px;
             }
         }
     }

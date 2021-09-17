@@ -27,7 +27,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        justify-self: start;
 
         .name > h1 {
             font-size: 35px;
@@ -39,7 +38,7 @@
             align-items: center;
 
             .cv_text {
-                font-size: 20px;
+                font-size: 23px;
                 font-weight: bold;
                 white-space: nowrap;
             }
@@ -64,12 +63,13 @@
             .name > h1 {
                 font-size: 3vw;
             }
+
             .cv {
                 flex-direction: column;
                 align-items: flex-start;
 
                 .cv_text {
-                    font-size: 18px;
+                    font-size: 2.2vw;
                 }
 
                 .cv_img {
@@ -86,12 +86,11 @@
 
 @media screen and (max-width: 768px) {
     .container {
-        height: 110vh;
-        padding: 20px 5px;
+        height: 100vh;
+        min-height: 625px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
         row-gap: 20px;
-        align-content: flex-start;
 
         .image {
             width: 65%;
@@ -99,7 +98,6 @@
         }
 
         .description {
-            justify-content: flex-start;
             justify-self: center;
             row-gap: 30px;
 
@@ -108,7 +106,9 @@
             }
 
             .cv {
-                margin-left: 0px;
+                .cv_text {
+                    font-size: 3vw;
+                }
             }
         }
     }
@@ -122,6 +122,12 @@
                     font-size: 25px;
                 }
             }
+
+            .cv {
+                .cv_text {
+                    font-size: 20px;
+                }
+            }
         }
     }
 }
@@ -129,13 +135,19 @@
 @media screen and (max-width: 400px) {
     .container {
         .image {
-            min-width: 300px;
+            min-width: 280px;
         }
 
         .description {
             .name {
                 & > h1 {
-                    font-size: 21px;
+                    font-size: 22px;
+                }
+            }
+
+            .cv {
+                .cv_text {
+                    font-size: 19px;
                 }
             }
         }

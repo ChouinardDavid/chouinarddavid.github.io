@@ -1,5 +1,6 @@
 .container {
     height: 75vh;
+    max-height: 800px;
     margin-bottom: 75px;
     padding: 20px;
     display: grid;
@@ -54,6 +55,8 @@
 
 @media screen and (max-width: 1200px) {
     .container {
+        max-height: 575px;
+
         .image {
             min-width: 375px;
             width: 90%;
@@ -87,7 +90,8 @@
 @media screen and (max-width: 768px) {
     .container {
         height: 100vh;
-        min-height: 625px;
+        min-height: 600px;
+        max-height: 1100px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
         row-gap: 20px;
@@ -98,23 +102,34 @@
         }
 
         .description {
+            justify-content: space-around;
             justify-self: center;
+            align-items: center;
             row-gap: 30px;
+            margin-top: 20px;
 
             .name > h1 {
                 font-size: 3.8vw;
             }
 
             .cv {
+                flex-direction: row;
+                align-items: center;
+
                 .cv_text {
                     font-size: 3vw;
+                }
+
+                .cv_button {
+                    margin-top: 0px;
+                    margin-left: 25px;
                 }
             }
         }
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 674px) {
     .container {
         .description {
             .name {
@@ -132,13 +147,17 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
     .container {
         .image {
             min-width: 280px;
         }
 
         .description {
+            align-items: flex-start;
+            row-gap: 0px;
+            margin-top: 0px;
+
             .name {
                 & > h1 {
                     font-size: 22px;
@@ -146,8 +165,16 @@
             }
 
             .cv {
+                flex-direction: column;
+                align-items: flex-start;
+
                 .cv_text {
                     font-size: 19px;
+                }
+
+                .cv_button {
+                    margin-top: 15px;
+                    margin-left: 0px;
                 }
             }
         }

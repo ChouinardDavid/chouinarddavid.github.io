@@ -39,8 +39,8 @@ const sections = {
         name: 'Certifications',
     },
     projects: {
-        id: 'projects',
-        name: 'Projets',
+        id: 'realisations',
+        name: 'Réalisations',
     },
     interest: {
         id: 'interest',
@@ -66,9 +66,20 @@ export const footer_text = {
 export const presentation_text = {
     id: sections.presentation.id,
     title: sections.presentation.name,
-    description: `Développeur web full-stack, je maitrise plus particulièrement l'environnement .NET, tant au niveau base de données qu'au niveau du code. 
-        ..............
-        Passionné par les technologies, je suis constamment à la recherche d'apprentissage pour parfaire mes connaissance dans ce domaine.`,
+    description: `Après 5 ans de carrière dans le domaine de la <span class="biotech">biotechnologie</span>, j'ai décidé de retourner à l'école pour
+     réorienter ma carrière en tant que <span class="info">développeur web full-stack</span>.
+     L'informatique a toujours fait partie de mes intérêts, maintenant, j'en fait mon métier et je me suis jamais autant senti à ma place !
+     <br/>
+     <br/>
+     Je maîtrise la plateforme .NET, les bases de données SQL ainsi que le langague Javascript. J'aime particulièrement
+     explorer des nouvelles technologies et maintenir à jour mes connaissances à l'aide de formations et de projets personnels. 
+     De cette façon, j'ai aquis des compétences pour développer des interfaces web avec React et de service web (API) avec .NET Core.
+     <br/>
+     <br/>
+     Merci de prendre le temps de consulter ma page web !
+     <br/>
+     Bonne navigation ;)
+     `,
 };
 
 export const skills_text = {
@@ -79,20 +90,20 @@ export const skills_text = {
             id: 'Techno',
             title: 'Technologies',
             skills: [
-                '.NET',
-                'Base de données SQL',
-                'Rapport SSRS',
+                '.NET', //
+                'SQL',
+                'EF Core / NHibernate',
                 '.NET Core',
                 'Cloud Azure',
-                'NextJs',
+                'Next.js',
             ],
         },
         {
             id: 'langages',
             title: 'Langages',
             skills: [
-                'C#',
-                'vb.net',
+                'C#', //
+                ' vb.net',
                 'Javascript',
                 'JQuery',
                 'HTML/CSS',
@@ -104,10 +115,10 @@ export const skills_text = {
             title: 'Outils',
             skills: [
                 'Visual Studio',
-                'SQL Server Management Studio',
+                'Visual Studio Code',
+                'SSMS (SQL)',
                 'Azure DevOps',
                 'Git',
-                'Visual Studio Code',
                 'Postman',
             ],
         },
@@ -116,21 +127,21 @@ export const skills_text = {
             title: 'Designs et concepts',
             skills: [
                 'MVC', //
-                'MVVM',
-                'Web API',
+                'API',
                 'S.O.L.I.D.',
-                'R.E.S.T. API',
+                'R.E.S.T.',
+                'Design patterns',
             ],
         },
         {
             id: 'complementaires',
             title: 'Complémentaires',
             skills: [
-                'Tests unitaires',
                 'Méthode agile',
+                'Scrum Master',
+                'Tests unitaires',
                 'Kendo',
-                'DACPAC',
-                "Projet d'envergure",
+                'Rapport SSRS',
             ],
         },
         {
@@ -160,13 +171,13 @@ export const career_text = {
                 // dateDebut: 'août 2019',
                 dateDebut: '2019',
                 dateFin: 'auj.',
-                description: `En tant que développeur fullstack, je participe au développement de l'application <a class="specialLinkEffect2" href="https://www.dcicristalnet.com/">Cristal-Net</a> au sein d'une équipe agile. 
-                    Celle-ci permet au personnel soigant de gérer les données relatives aux visites des patients dans les hopitaux.`,
+                description: `En tant que développeur web fullstack, 
+                    je participe au développement de <a class="specialLinkEffect2" href="https://www.dcicristalnet.com/">Cristal-Net</a> au sein d'une équipe agile. 
+                    Il s'agit d'un système d'envergure utilisés dans les établissements de santé du Québec. J'ai aussi le rôle de Scrum Master pour supporter l'équipe dans la méthode agile.`,
                 chips: [
                     '.NET', //
                     'Javascript',
                     'SQL',
-                    'DevOps',
                     'Scrum master',
                 ],
             },
@@ -183,8 +194,8 @@ export const career_text = {
                 // dateFin: 'août 2019',
                 dateDebut: '2018',
                 dateFin: '2019',
-                description: `Assurer un support aux utilisateurs des applications corporatives dans le département de la comptabilité et fiscalité. 
-                    Cela consistait à corriger les anomalies, mais aussi à participer aux évolutions des systèmes utilisés.`,
+                description: `Au sein d'une équipe DevOps, prendre part au support et au développement des systèmes du département de la comptabilité.
+                Cela consistait à répondre aux utilisateurs lors de situation particulière, mais aussi de participer aux évolutions des applications.`,
                 chips: [
                     '.NET',
                     'Javascript',
@@ -217,7 +228,7 @@ export const career_text = {
                 // dateFin: 'févr. 2017',
                 dateDebut: '2014',
                 dateFin: '2017',
-                description: `Participer à la production du vaccin *anti-grippal*, mon rôle était d'opérer les systèmes de remplissage en fiole ou en flacon.
+                description: `En tant que technicien dans une usine de production du vaccin anti-gripal, mon rôle était d'opérer les systèmes de remplissage en flacon.
                     Je contribuais aussi activement à la formation des nouveaux employés.`,
             },
         },
@@ -232,8 +243,8 @@ export const career_text = {
                 // dateDebut: 'janv. 2014',
                 // dateFin: 'oct. 2014',
                 dateDebut: '2014',
-                description: `Effectuer les analyses de laboratoire permettant de valider la qualité du produit à toutes les étapes de sa préparation.
-                    Ces données étaient ensuite compilées et présentées à l'assurance qualité sous forme de rapport.`,
+                description: `Effectuer les analyses de laboratoire permettant de valider la qualité du produit. 
+                Compiler et construire un rapport des résultats obtenus.`,
             },
         },
         {
@@ -248,8 +259,8 @@ export const career_text = {
                 // dateFin: 'janv. 2014',
                 dateDebut: '2012',
                 dateFin: '2014',
-                description: `Mon rôle dans cette entreprise était plutôt diversifié. Principalement, je participais aux activités de production et aux projets de R&D. 
-                    Mais j'assurais aussi l'approvisionnement des matières premières ainsi que la livraison des commandes aux clients.`,
+                description: `Contribuer aux activités de production et aux projets de R&D. 
+                    j'assurais aussi l'approvisionnement des matières premières ainsi que la livraison des commandes aux clients.`,
             },
         },
     ],
@@ -287,7 +298,7 @@ export const projects_text = {
         {
             title: 'Ma page web',
             imageSource: '/toonPerso2.jpg',
-            description: `Ma page web personnelle, sur laquelle vous êtes en ce moment, me permet de me présenter`,
+            description: `Ma page web personnelle, premier projet réalisé de A à Z !`,
             codeSourceLink:
                 'https://github.com/ChouinardDavid/chouinarddavid.github.io',
             chips: ['React', 'Next.js', 'Material-UI'],

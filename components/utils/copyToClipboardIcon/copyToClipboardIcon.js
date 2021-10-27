@@ -1,4 +1,4 @@
-import { faSquare } from '@fortawesome/free-regular-svg-icons';
+import { faCircle } from '@fortawesome/free-regular-svg-icons';
 import { faCopy } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
@@ -25,7 +25,7 @@ const CopyToClipboardIcon = (props) => {
             <IconButton onClick={onClick} size='small'>
                 <span className='fa-stack'>
                     <FontAwesomeIcon
-                        icon={faSquare}
+                        icon={faCircle}
                         color='black'
                         className='fa-stack-2x'
                     />

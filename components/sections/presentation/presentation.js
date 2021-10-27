@@ -9,6 +9,7 @@ const Presentation = (props) => {
         <SectionForm id={labels.id} title={labels.title}>
             <Paper elevation={3} className={styles.presentation}>
                 <p dangerouslySetInnerHTML={{ __html: labels.description }} />
+                {/* {labels.description} */}
             </Paper>
         </SectionForm>
     );

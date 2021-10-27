@@ -3,7 +3,7 @@ import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import createMyMuiTheme from '../styles/createMyMuiTheme';
-import '../styles/globals.css';
+import '../styles/globals.scss';
 
 function MyApp(props) {
     const { Component, pageProps } = props;
@@ -18,6 +18,11 @@ function MyApp(props) {
         }
     }, []);
 
+    const title = 'David Chouinard-Lavoie';
+    const description = 'Ma page web personnelle';
+    const image = '/toonPerso2.jpg';
+    const url = 'https://chouinarddavid.github.io/';
+
     return (
         <>
             <Head>
@@ -30,40 +35,22 @@ function MyApp(props) {
 
                 {/* <!-- Primary Meta Tags --> */}
                 <title>David Chouinard-Lavoie</title>
-                <meta name='title' content='David Chouinard-Lavoie' />
-                <meta
-                    name='description'
-                    content='Une description de mon site'
-                />
+                <meta name='title' content={title} />
+                <meta name='description' content={description} />
 
                 {/* <!-- Open Graph / Facebook --> */}
                 <meta property='og:type' content='website' />
-                <meta
-                    property='og:url'
-                    content='https://chouinarddavid.github.io/'
-                />
-                <meta property='og:title' content='David Chouinard-Lavoie' />
-                <meta
-                    property='og:description'
-                    content='Consulter ma page web pour plus de détails sur mon parcourt professionnel'
-                />
-                <meta property='og:image' content='/photoPerso.png' />
+                <meta property='og:url' content={url} />
+                <meta property='og:title' content={title} />
+                <meta property='og:description' content={description} />
+                <meta property='og:image' content={image} />
 
                 {/* <!-- Twitter --> */}
                 <meta property='twitter:card' content='summary_large_image' />
-                <meta
-                    property='twitter:url'
-                    content='https://chouinarddavid.github.io/'
-                />
-                <meta
-                    property='twitter:title'
-                    content='David Chouinard-Lavoie'
-                />
-                <meta
-                    property='twitter:description'
-                    content='Consulter ma page web pour plus de détails sur mon parcourt professionnel'
-                />
-                <meta property='twitter:image' content='/photoPerso.png' />
+                <meta property='twitter:url' content={url} />
+                <meta property='twitter:title' content={title} />
+                <meta property='twitter:description' content={description} />
+                <meta property='twitter:image' content={image} />
             </Head>
 
             <MuiThemeProvider theme={myMuiTheme}>

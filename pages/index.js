@@ -9,7 +9,8 @@ import Presentation from '../components/sections/presentation/presentation';
 import Project from '../components/sections/projects/project';
 import Skill from '../components/sections/skills/skill';
 import * as labels from '../labels/fr';
-import styles from '../styles/app.module.scss';
+
+// import styles from '../styles/app.module.scss';
 
 export default function Home() {
     return (

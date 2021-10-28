@@ -20,14 +20,14 @@ function MyApp(props) {
 
     const title = 'David Chouinard-Lavoie';
     const description = 'Ma page web personnelle';
-    const image = '/toonPerso2.jpg';
+    const image = '/photoPerso3.jpg';
     const url = 'https://chouinarddavid.github.io/';
 
     return (
         <>
             <Head>
                 <title>David Chouinard-Lavoie</title>
-                <link rel='icon' href='/favicon.ico' />
+                <link rel='icon' href='/faviconCode.ico' />
                 <meta
                     name='viewport'
                     content='minimum-scale=1, initial-scale=1, width=device-width'

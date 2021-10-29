@@ -1,3 +1,0 @@
-When publishing an Antora site to GitHub Pages, it's necessary to an empty file to the root directory named .nojekyll.
- The existence of this file tells GitHub Pages not to run the published files through Jekyll. 
- This is important since Jekyll will discard any files that begin with _.

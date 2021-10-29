@@ -20,7 +20,7 @@ function MyApp(props) {
 
     const title = 'David Chouinard-Lavoie';
     const description = 'Ma page web personnelle';
-    const image = '/photoPerso3.jpg';
+    const image = '/ogImage.png';
     const url = 'https://chouinarddavid.github.io/';
 
     return (

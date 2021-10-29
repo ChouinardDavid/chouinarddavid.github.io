@@ -9,7 +9,7 @@ const Header = (props) => {
 
     return (
         <div className={styles.container} id={labels.id}>
-            <img className={styles.image} src='/toonPerso2.jpg' />
+            <img className={styles.image} src='/toonPerso.jpg' />
             <div className={styles.description}>
                 <div className={styles.name}>
                     <h1>David Chouinard-Lavoie</h1>

@@ -297,7 +297,7 @@ export const projects_text = {
     projects: [
         {
             title: 'Ma page web',
-            imageSource: '/toonPerso2.jpg',
+            imageSource: '/toonPerso.jpg',
             description: `Ma page web personnelle, premier projet réalisé de A à Z !`,
             codeSourceLink:
                 'https://github.com/ChouinardDavid/chouinarddavid.github.io',

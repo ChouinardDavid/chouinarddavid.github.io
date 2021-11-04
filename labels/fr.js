@@ -39,7 +39,7 @@ const sections = {
         name: 'Certifications',
     },
     projects: {
-        id: 'realisations',
+        id: 'projets',
         name: 'Réalisations',
     },
     interest: {
@@ -91,10 +91,10 @@ export const skills_text = {
             title: 'Technologies',
             skills: [
                 '.NET', //
-                'SQL',
-                'EF Core / NHibernate',
                 '.NET Core',
-                'Cloud Azure',
+                // 'EF Core / NHibernate',
+                'SQL',
+                'Node.js',
                 'Next.js',
             ],
         },
@@ -105,21 +105,9 @@ export const skills_text = {
                 'C#', //
                 ' vb.net',
                 'Javascript',
-                'JQuery',
-                'HTML/CSS',
                 'React',
-            ],
-        },
-        {
-            id: 'outils',
-            title: 'Outils',
-            skills: [
-                'Visual Studio',
-                'Visual Studio Code',
-                'SSMS (SQL)',
-                'Azure DevOps',
-                'Git',
-                'Postman',
+                'HTML/CSS',
+                // 'JQuery',
             ],
         },
         {
@@ -127,10 +115,22 @@ export const skills_text = {
             title: 'Designs et concepts',
             skills: [
                 'MVC', //
-                'API',
+                'REST API',
                 'S.O.L.I.D.',
-                'R.E.S.T.',
                 'Design patterns',
+                'Cloud Azure',
+            ],
+        },
+        {
+            id: 'outils',
+            title: 'Outils',
+            skills: [
+                'Visual Studio',
+                // 'Visual Studio Code',
+                'SSMS (SQL)',
+                'Azure DevOps',
+                'Git',
+                'Postman',
             ],
         },
         {
@@ -139,8 +139,8 @@ export const skills_text = {
             skills: [
                 'Méthode agile',
                 'Scrum Master',
+                'DevOps',
                 'Tests unitaires',
-                'Kendo',
                 'Rapport SSRS',
             ],
         },
@@ -148,9 +148,11 @@ export const skills_text = {
             id: 'perso',
             title: 'Personnelles',
             skills: [
-                'Communication active', //
-                'Autonomie',
-                'Initiative',
+                'Communique activement', //
+                'Capacité d’adaptation',
+                'Attitude positive',
+                'Autonome',
+                'Organisé',
             ],
         },
     ],
@@ -168,7 +170,6 @@ export const career_text = {
             content: {
                 employeur: 'CHU de Québec, Québec',
                 poste: 'Technicien informatique (développeur)',
-                // dateDebut: 'août 2019',
                 dateDebut: '2019',
                 dateFin: 'auj.',
                 description: `En tant que développeur web fullstack, 
@@ -190,8 +191,6 @@ export const career_text = {
             content: {
                 employeur: 'Industrielle Alliance, Québec',
                 poste: 'Développeur',
-                // dateDebut: 'sept. 2018',
-                // dateFin: 'août 2019',
                 dateDebut: '2018',
                 dateFin: '2019',
                 description: `Au sein d'une équipe DevOps, prendre part au support et au développement des systèmes du département de la comptabilité.
@@ -211,8 +210,7 @@ export const career_text = {
             },
             domaine: domaines.backToSchool,
             content: {
-                title: "Retour à l'école (Technique de l’informatique)",
-                // dates: 'févr. 2016 - déc. 2018',
+                title: "Retour à l'école — Technique de l’informatique",
                 dates: '2016 - 2018',
             },
         },
@@ -224,8 +222,6 @@ export const career_text = {
             content: {
                 employeur: 'GSK, Québec',
                 poste: 'Technicien de production',
-                // dateDebut: 'nov. 2014',
-                // dateFin: 'févr. 2017',
                 dateDebut: '2014',
                 dateFin: '2017',
                 description: `En tant que technicien dans une usine de production du vaccin anti-gripal, mon rôle était d'opérer les systèmes de remplissage en flacon.
@@ -240,8 +236,6 @@ export const career_text = {
             content: {
                 employeur: 'BD Diagnostics, Québec',
                 poste: 'Technicien au contrôle de la qualité',
-                // dateDebut: 'janv. 2014',
-                // dateFin: 'oct. 2014',
                 dateDebut: '2014',
                 description: `Effectuer les analyses de laboratoire permettant de valider la qualité du produit. 
                 Compiler et construire un rapport des résultats obtenus.`,
@@ -255,8 +249,6 @@ export const career_text = {
             content: {
                 employeur: 'Feldan, Québec',
                 poste: 'Technicien de laboratoire',
-                // dateDebut: 'mai 2012',
-                // dateFin: 'janv. 2014',
                 dateDebut: '2012',
                 dateFin: '2014',
                 description: `Contribuer aux activités de production et aux projets de R&D. 

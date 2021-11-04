@@ -13,7 +13,7 @@ const Header = (props) => {
             <div className={styles.description}>
                 <div className={styles.name}>
                     <h1>David Chouinard-Lavoie</h1>
-                    <h1>Developpeur Web Full-Stack</h1>
+                    <h1>Développeur Web Full-Stack</h1>
                     <h1>Québec, Qc</h1>
                 </div>
                 <div className={styles.cv}>

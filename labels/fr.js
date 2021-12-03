@@ -58,7 +58,7 @@ export const footer_text = {
     email: 'chouinard.dc@gmail.com',
     image: '/photoPerso3.jpg',
     socialLinks: [
-        'https://www.linkedin.com/in/david-chouinard/',
+        'https://www.linkedin.com/in/davidchouinardlavoie/',
         'https://github.com/ChouinardDavid',
     ],
 };
@@ -148,7 +148,7 @@ export const skills_text = {
             id: 'perso',
             title: 'Personnelles',
             skills: [
-                'Communique activement', //
+                'Communication active', //
                 'Capacité d’adaptation',
                 'Attitude positive',
                 'Autonome',

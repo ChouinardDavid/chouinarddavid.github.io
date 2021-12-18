@@ -288,9 +288,9 @@ export const projects_text = {
     title: sections.projects.name,
     projects: [
         {
-            title: 'Ma page web',
+            title: 'Présentation de mon profil en format web',
             imageSource: '/toonPerso.jpg',
-            description: `Ma page web personnelle, premier projet réalisé de A à Z !`,
+            description: `L’objectif était de présenter mon parcours professionnel tout en développant mes compétences de développeur web avec des nouvelles technologies.`,
             codeSourceLink:
                 'https://github.com/ChouinardDavid/chouinarddavid.github.io',
             chips: ['React', 'Next.js', 'Material-UI'],
@@ -306,7 +306,7 @@ export const certfications_text = {
             title: 'Microsoft Azure Fundamentals',
             year: 2021,
             image: '/azure-fundamentals.png',
-            link: 'https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals',
+            link: 'https://docs.microsoft.com/fr-ca/learn/certifications/azure-fundamentals/',
         },
     ],
 };

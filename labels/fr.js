@@ -73,10 +73,10 @@ export const presentation_text = {
      <br/>
      Je maîtrise la plateforme .NET, les bases de données SQL ainsi que le langague Javascript. J'aime particulièrement
      explorer des nouvelles technologies et maintenir à jour mes connaissances à l'aide de formations et de projets personnels. 
-     De cette façon, j'ai aquis des compétences pour développer des interfaces web avec React et de service web (API) avec .NET Core.
+     De cette façon, j'ai aquis des compétences en développement de page web avec React, ainsi que de service web (API) avec .NET Core.
      <br/>
      <br/>
-     Merci de prendre le temps de consulter ma page web !
+     Merci de prendre le temps de consulter ma page web!
      <br/>
      Bonne navigation ;)
      `,
@@ -174,7 +174,7 @@ export const career_text = {
                 dateFin: 'auj.',
                 description: `En tant que développeur web fullstack, 
                     je participe au développement de <a class="specialLinkEffect2" href="https://www.dcicristalnet.com/">Cristal-Net</a> au sein d'une équipe agile. 
-                    Il s'agit d'un système d'envergure utilisés dans les établissements de santé du Québec. J'ai aussi le rôle de Scrum Master pour supporter l'équipe dans la méthode agile.`,
+                    Il s'agit d'un système d'envergure utilisé dans les établissements de santé du Québec. J'assume aussi le rôle de Scrum Master dans cette équipe.`,
                 chips: [
                     '.NET', //
                     'Javascript',
@@ -193,8 +193,8 @@ export const career_text = {
                 poste: 'Développeur',
                 dateDebut: '2018',
                 dateFin: '2019',
-                description: `Au sein d'une équipe DevOps, prendre part au support et au développement des systèmes du département de la comptabilité.
-                Cela consistait à répondre aux utilisateurs lors de situation particulière, mais aussi de participer aux évolutions des applications.`,
+                description: `Au sein d'une équipe DevOps, participer au développement des évolutions demandées et assurer le support technique des systèmes utlisés dans le département de la comptabilité.
+                Cela impliquait de communiquer directement avec les utilisateurs lors de situation particulière`,
                 chips: [
                     '.NET',
                     'Javascript',
@@ -290,7 +290,7 @@ export const projects_text = {
         {
             title: 'Présentation de mon profil en format web',
             imageSource: '/toonPerso.jpg',
-            description: `L’objectif était de présenter mon parcours professionnel tout en développant mes compétences de développeur web avec des nouvelles technologies.`,
+            description: `L’objectif est de présenter mon parcours professionnel tout en développant mes compétences de développeur web avec de nouvelles technologies.`,
             codeSourceLink:
                 'https://github.com/ChouinardDavid/chouinarddavid.github.io',
             chips: ['React', 'Next.js', 'Material-UI'],

@@ -66,7 +66,7 @@ export const footer_text = {
 export const presentation_text = {
     id: sections.presentation.id,
     title: sections.presentation.name,
-    description: `Après 5 ans de carrière dans le domaine de la <span class="biotech">biotechnologie</span>, j'ai décidé de retourner à l'école pour
+    description: `Après 5 ans de carrière dans le domaine des <span class="biotech">biotechnologies</span>, j'ai décidé de retourner à l'école pour
      réorienter ma carrière en tant que <span class="info">développeur web full-stack</span>.
      L'informatique a toujours fait partie de mes intérêts, maintenant, j'en fait mon métier et je me suis jamais autant senti à ma place !
      <br/>
@@ -78,7 +78,7 @@ export const presentation_text = {
      <br/>
      Merci de prendre le temps de consulter ma page web!
      <br/>
-     Bonne navigation ;)
+     Bonne navigation
      `,
 };
 
@@ -90,9 +90,8 @@ export const skills_text = {
             id: 'Techno',
             title: 'Technologies',
             skills: [
-                '.NET', //
-                '.NET Core',
-                // 'EF Core / NHibernate',
+                '.NET / .NET Core', //
+                'EF Core / NHibernate',
                 'SQL',
                 'Node.js',
                 'Next.js',
@@ -102,12 +101,11 @@ export const skills_text = {
             id: 'langages',
             title: 'Langages',
             skills: [
-                'C#', //
-                ' vb.net',
+                'C# / vb.net', //
                 'Javascript',
+                'JQuery',
                 'React',
                 'HTML/CSS',
-                // 'JQuery',
             ],
         },
         {
@@ -126,7 +124,6 @@ export const skills_text = {
             title: 'Outils',
             skills: [
                 'Visual Studio',
-                // 'Visual Studio Code',
                 'SSMS (SQL)',
                 'Azure DevOps',
                 'Git',
@@ -193,8 +190,8 @@ export const career_text = {
                 poste: 'Développeur',
                 dateDebut: '2018',
                 dateFin: '2019',
-                description: `Au sein d'une équipe DevOps, participer au développement des évolutions demandées et assurer le support technique des systèmes utlisés dans le département de la comptabilité.
-                Cela impliquait de communiquer directement avec les utilisateurs lors de situation particulière`,
+                description: `Participer au développement des évolutions demandées et assurer le support technique des systèmes utlisés dans le département de la comptabilité.
+                Cela impliquait de communiquer directement avec les utilisateurs pour clarifier les besoins.`,
                 chips: [
                     '.NET',
                     'Javascript',
@@ -224,7 +221,7 @@ export const career_text = {
                 poste: 'Technicien de production',
                 dateDebut: '2014',
                 dateFin: '2017',
-                description: `En tant que technicien dans une usine de production du vaccin anti-gripal, mon rôle était d'opérer les systèmes de remplissage en flacon.
+                description: `En tant que technicien dans une usine de production du vaccin antigrippal, mon rôle était d'opérer les systèmes de remplissage en flacon.
                     Je contribuais aussi activement à la formation des nouveaux employés.`,
             },
         },
@@ -238,7 +235,7 @@ export const career_text = {
                 poste: 'Technicien au contrôle de la qualité',
                 dateDebut: '2014',
                 description: `Effectuer les analyses de laboratoire permettant de valider la qualité du produit. 
-                Compiler et construire un rapport des résultats obtenus.`,
+                Compiler les données et construire un rapport pour présenter les résultats obtenus à l'assurance qualité.`,
             },
         },
         {
@@ -251,7 +248,7 @@ export const career_text = {
                 poste: 'Technicien de laboratoire',
                 dateDebut: '2012',
                 dateFin: '2014',
-                description: `Contribuer aux activités de production et aux projets de R&D. 
+                description: `Contribuer aux activités de production et aux projets de R&D, 
                     j'assurais aussi l'approvisionnement des matières premières ainsi que la livraison des commandes aux clients.`,
             },
         },
@@ -290,7 +287,7 @@ export const projects_text = {
         {
             title: 'Présentation de mon profil en format web',
             imageSource: '/toonPerso.jpg',
-            description: `L’objectif est de présenter mon parcours professionnel tout en développant mes compétences de développeur web avec de nouvelles technologies.`,
+            description: `L’objectif est de présenter mon parcours professionnel tout en développant mes compétences de développeur web avec des nouvelles technologies.`,
             codeSourceLink:
                 'https://github.com/ChouinardDavid/chouinarddavid.github.io',
             chips: ['React', 'Next.js', 'Material-UI'],

@@ -73,7 +73,7 @@ export const presentation_text = {
      <br/>
      Je maîtrise la plateforme .NET, les bases de données SQL ainsi que le langague Javascript. J'aime particulièrement
      explorer des nouvelles technologies et maintenir à jour mes connaissances à l'aide de formations et de projets personnels. 
-     De cette façon, j'ai aquis des compétences en développement de page web avec React, ainsi que de service web (API) avec .NET Core.
+     De cette façon, j'ai aquis des compétences en intégration de page web avec React, ainsi qu'en développement de service web (API) avec .NET Core.
      <br/>
      <br/>
      Merci de prendre le temps de consulter ma page web!

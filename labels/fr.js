@@ -32,7 +32,7 @@ const sections = {
     },
     education: {
         id: 'education',
-        name: 'Éducation',
+        name: 'Scolarité',
     },
     certification: {
         id: 'certification',
@@ -66,9 +66,9 @@ export const footer_text = {
 export const presentation_text = {
     id: sections.presentation.id,
     title: sections.presentation.name,
-    description: `Après 5 ans de carrière dans le domaine des <span class="biotech">biotechnologies</span>, j'ai décidé de retourner à l'école pour
-     réorienter ma carrière en tant que <span class="info">développeur web full-stack</span>.
-     L'informatique a toujours fait partie de mes intérêts, maintenant, j'en fait mon métier et je me suis jamais autant senti à ma place !
+    description: `Après 5 ans de carrière dans le domaine des <span class="biotech">biotechnologies</span>, j'ai décidé de me former pour réorienter ma carrière
+     en tant que <span class="info">développeur web full-stack</span>.
+     L'informatique a toujours fait partie de mes intérêts, maintenant, j'en fais mon métier !
      <br/>
      <br/>
      Je maîtrise la plateforme .NET, les bases de données SQL ainsi que le langague Javascript. J'aime particulièrement
@@ -148,8 +148,8 @@ export const skills_text = {
                 'Communication active', //
                 'Capacité d’adaptation',
                 'Attitude positive',
-                'Autonome',
-                'Organisé',
+                'autonomie',
+                'Bonne organisation',
             ],
         },
     ],
@@ -170,13 +170,13 @@ export const career_text = {
                 dateDebut: '2019',
                 dateFin: 'auj.',
                 description: `En tant que développeur web fullstack, 
-                    je participe au développement de <a class="specialLinkEffect2" href="https://www.dcicristalnet.com/">Cristal-Net</a> au sein d'une équipe agile. 
-                    Il s'agit d'un système d'envergure utilisé dans les établissements de santé du Québec. J'assume aussi le rôle de Scrum Master dans cette équipe.`,
+                    je prends part au développement de <a class="specialLinkEffect2" href="https://www.dcicristalnet.com/">Cristal-Net</a> au sein d'une équipe agile. 
+                    Il s'agit d'un système d'envergure utilisé dans les établissements de santé du Québec.`,
                 chips: [
-                    '.NET', //
+                    'C#/vb.net', //
                     'Javascript',
                     'SQL',
-                    'Scrum master',
+                    // 'Scrum master',
                 ],
             },
         },
@@ -193,11 +193,11 @@ export const career_text = {
                 description: `Participer au développement des évolutions demandées et assurer le support technique des systèmes utlisés dans le département de la comptabilité.
                 Cela impliquait de communiquer directement avec les utilisateurs pour clarifier les besoins.`,
                 chips: [
-                    '.NET',
+                    'C#',
                     'Javascript',
                     'SQL',
                     'DevOps',
-                    'Release manager',
+                    // 'Release manager',
                 ],
             },
         },
@@ -207,7 +207,7 @@ export const career_text = {
             },
             domaine: domaines.backToSchool,
             content: {
-                title: "Retour à l'école — Technique de l’informatique",
+                title: 'Formation professionnelle — Technique de l’informatique',
                 dates: '2016 - 2018',
             },
         },
@@ -248,7 +248,7 @@ export const career_text = {
                 poste: 'Technicien de laboratoire',
                 dateDebut: '2012',
                 dateFin: '2014',
-                description: `Contribuer aux activités de production et aux projets de R&D, 
+                description: `Tout en contribant aux activités de production et aux projets de R&D, 
                     j'assurais aussi l'approvisionnement des matières premières ainsi que la livraison des commandes aux clients.`,
             },
         },

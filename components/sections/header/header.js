@@ -16,7 +16,7 @@ const Header = (props) => {
                     <h1>Développeur Web Full-Stack</h1>
                     <h1>Québec, Qc</h1>
                 </div>
-                <div className={styles.cv}>
+                {/* <div className={styles.cv}>
                     <span className={styles.cv_text}>
                         Consulter mon CV détaillé
                     </span>
@@ -29,7 +29,7 @@ const Header = (props) => {
                             Ouvrir
                         </Button>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );

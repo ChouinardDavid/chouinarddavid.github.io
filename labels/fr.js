@@ -91,10 +91,10 @@ export const skills_text = {
             title: 'Technologies',
             skills: [
                 '.NET / .NET Core', //
-                'EF Core / NHibernate',
                 'SQL',
-                'Node.js',
-                'Next.js',
+                'Blazor',
+                'EF Core / NHibernate',
+                'Node.js'
             ],
         },
         {
@@ -112,7 +112,7 @@ export const skills_text = {
             id: 'designs',
             title: 'Designs et concepts',
             skills: [
-                'MVC', //
+                'MVC / MVVM', //
                 'REST API',
                 'S.O.L.I.D.',
                 'Design patterns',
@@ -127,7 +127,7 @@ export const skills_text = {
                 'SSMS (SQL)',
                 'Azure DevOps',
                 'Git',
-                'Postman',
+                'Telerik',
             ],
         },
         {
